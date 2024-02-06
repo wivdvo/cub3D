@@ -1,11 +1,17 @@
 NAME = cube3d
 
-SRCS = main.c
+SRCS =	get_next_line_utils.c \
+		get_next_line.c \
+		parsing.c \
+		get_textures.c \
+		make_file_array.c \
+		utils.c \
 
 OBJS = $(SRCS:.c=.o)
 
 CC = cc
-#FLAGS = -Wall -Werror -Wextra
+#CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -g
 LIBFLAGS =	-lmlx -lXext -lX11
 
 all: $(NAME)
