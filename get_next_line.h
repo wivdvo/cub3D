@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 10:43:25 by wvan-der          #+#    #+#             */
-/*   Updated: 2023/10/23 15:07:30 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/06 15:18:09 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ char	*ft_realloc(char **line, int i, int *did_malloc_fail);
 char	*make_res(char **line);
 char	*ft_read(char **line, int fd, int *bytes_read);
 char	*get_next_line(int fd);
+int	get_colors(t_pars *pars);
 
 #endif
