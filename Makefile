@@ -1,8 +1,6 @@
 NAME = cube3d
 
-SRCS =	get_next_line_utils.c \
-		get_next_line.c \
-		parsing.c \
+SRCS =	parsing.c \
 		get_textures.c \
 		make_file_array.c \
 		utils.c \
