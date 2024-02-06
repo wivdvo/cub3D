@@ -11,9 +11,11 @@ LIBFLAGS =	-lmlx -lXext -lX11
 all: $(NAME)
 
 $(NAME):	$(OBJS)
-				$(CC) $(OBJS) $(CFLAGS) $(LIBFLAGS)  -o $(NAME)
+			cd libft && $(MAKE) && $(MAKE) bonus
+				$(CC) $(OBJS) $(CFLAGS) $(LIBFLAGS) ./libft/libft.a -o $(NAME)
 
 clean:
+		cd libft && $(MAKE) fclean 
 				$(RM) $(OBJS)
 
 fclean:		clean

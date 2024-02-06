@@ -38,6 +38,8 @@ ft_strtrim.c \
 ft_substr.c \
 ft_tolower.c \
 ft_toupper.c \
+get_next_line_utils.c \
+get_next_line.c \
 printf/ft_bzero.c \
 printf/ft_calloc.c \
 printf/ft_putchar_fd.c \

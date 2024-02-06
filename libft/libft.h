@@ -12,6 +12,12 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 11
+# endif
+
+# include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include "printf/ft_printf.h"
@@ -65,5 +71,15 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	*ft_calloc1(size_t nitems, size_t size);
+size_t	ft_strlen1(char *s);
+char	*ft_strjoin1(char *s1, char *s2);
+int		check_newline(char *line);
+int		check_newline_res(char *line);
+char	*ft_free(int bytes_read, char **line);
+char	*ft_realloc(char **line, int i, int *did_malloc_fail);
+char	*make_res(char **line);
+char	*ft_read(char **line, int fd, int *bytes_read);
+char	*get_next_line(int fd);
 
 #endif
