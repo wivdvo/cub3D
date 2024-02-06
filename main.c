@@ -2,10 +2,12 @@
 
 int main()
 {
+	void *mlx; 
+	void *mlx_win;
 
-	char *line;
-	ft_printf("hello i am filip\n");
-	line = get_next_line(0);
-	free(line);
-	return (0);
+	mlx = mlx_init();
+	mlx_win = mlx_new_window(mlx, WIDTH, HEIGHT, "Prozor stare majke");
+	mlx_loop(mlx);
+	
+	return (EXIT_FAILURE);
 }

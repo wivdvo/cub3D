@@ -13,6 +13,8 @@
 #ifndef CUB3D_H
 # define CUB3D_H
 
+# define WIDTH 1920
+# define HEIGHT 1080
 # include <fcntl.h>
 # include <math.h>
 # include <mlx.h>
