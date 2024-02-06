@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include "libft/libft.h"
 
 typedef struct s_pars
 {
@@ -22,6 +23,13 @@ typedef struct s_pars
 	int we_flag;
 	int ea_flag;
 	int so_flag;
+	int	floor_r;
+	int floor_g;
+	int floor_b;
+	int ceiling_r;
+	int ceiling_g;
+	int ceiling_b;
+	int	map_begin;
 } t_pars;
 
 void	put_error(char *str);
@@ -36,5 +44,6 @@ int check_flags(t_pars *pars);
 int	make_array(t_pars *pars, char *path);
 int	realloc_file_array(t_pars *pars, char *line, int y);
 int	read_file_array(t_pars *pars, int fd);
+void	pars_exit(t_pars *pars, char *msg);
 
 #endif

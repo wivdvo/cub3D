@@ -6,12 +6,11 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 15:09:43 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/06 15:50:41 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "parsing.h"
-#include "get_next_line.h"
 
 int	make_array(t_pars *pars, char *path)
 {

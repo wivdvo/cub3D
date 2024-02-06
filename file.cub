@@ -1,12 +1,17 @@
-
-line2
-
-NO ./hello
-
+WE ./hihi
 SO ./test
 EA ./hahah
+NO ./hello
+
+F 255,0,      255
+
 
 11111111111111111
 10000000000000001
 10000000000000001
 11111111111111111
+
+C 0, 0 , 0
+
+
+//if find map and not all triggerd error

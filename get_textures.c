@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 15:11:58 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/06 17:35:33 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ int	find(t_pars *pars, char *dir)
 	i = 0;
 	found = 0;
 	reset_start_end(pars);
-	while (pars->file[i])
+	while (pars->file[i] && i < pars->map_begin)
 	{
 		if (pars->file[i][0] == dir[0] && pars->file[i][1] == dir[1])
 		{
@@ -127,12 +127,12 @@ int	find(t_pars *pars, char *dir)
 int check_flags(t_pars *pars)
 {
 	if (pars->no_flag != 1)
-		return (put_error("north texture missing"), 1);
+		return (put_error("north texture missing or after map"), 1);
 	if (pars->so_flag != 1)
-		return (put_error("south texture missing"), 1);
+		return (put_error("south texture missing or after map"), 1);
 	if (pars->ea_flag != 1)
-		return (put_error("east texture missing"), 1);
+		return (put_error("east texture missing or after map"), 1);
 	if (pars->we_flag != 1)
-		return (put_error("west texture missing"), 1);
+		return (put_error("west texture missing or after map"), 1);
 	return (0);
 }
