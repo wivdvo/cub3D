@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 12:15:59 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 13:21:04 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	find_map_begin(t_pars *pars)
 		i++;
 	}
 	pars->map_begin = i;
-	printf("begin%s", pars->file[i]);
+	//printf("begin%s", pars->file[i]);
 }
 
 int	parsing(char *path)

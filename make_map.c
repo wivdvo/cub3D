@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:26:05 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 12:16:45 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 13:27:12 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,26 @@ int	make_map(t_pars *pars)
 int make_map_array(t_pars *pars)
 {
 	find_map_end(pars);
+	check_that_nothing_after_end(pars);
 	copy_map(pars);
+}
+
+void	check_that_nothing_after_end(t_pars *pars)
+{
+	int i;
+	int j;
+
+	i = pars->map_end + 1;
+	while (pars->file[i])
+	{
+		j = 0;
+		while (pars->file[i][j] || pars->file[i][j] == ' ' || pars->file[i][j] == '\n')
+			j++;
+		printf("c%d\n", pars->file[i][j]);
+		if (pars->file[i][j] != 0)
+			pars_exit(pars, "there is something after map");
+		i++;
+	}
 }
 
 int find_map_end(t_pars *pars)
@@ -41,7 +60,7 @@ int find_map_end(t_pars *pars)
 		i++;
 	}
 	pars->map_end = --i;
-	printf("end%s", pars->file[pars->map_end]);
+	//printf("end%s", pars->file[pars->map_end]);
 }
 
 void	print_map(t_pars *pars)
@@ -76,6 +95,5 @@ int copy_map(t_pars *pars)
 		j++;
 		i++;
 	}
-
 	print_map(pars);
 }

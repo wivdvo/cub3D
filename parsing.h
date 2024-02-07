@@ -50,5 +50,6 @@ int	make_map(t_pars *pars);
 int make_map_array(t_pars *pars);
 int find_map_end(t_pars *pars);
 int	get_colors(t_pars *pars);
+void	check_that_nothing_after_end(t_pars *pars);
 
 #endif
