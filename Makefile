@@ -5,6 +5,7 @@ SRCS =	parsing.c \
 		get_colors.c \
 		make_file_array.c \
 		utils.c \
+		make_map.c
 
 OBJS = $(SRCS:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 15:50:41 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 12:06:00 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,10 @@ int	realloc_file_array(t_pars *pars, char *line, int y)
 	i = 0;
 	temp = (char **)malloc(sizeof(char *) * (y + 3));
 	if (!temp)
-		return (-1);
+	{
+		free(line);
+		pars_exit(pars, "malloc failed");
+	}
 	while (pars->file && pars->file[i])
 	{
 		temp[i] = pars->file[i];
@@ -54,7 +57,7 @@ int	read_file_array(t_pars *pars, int fd)
 	y = 0;
 	pars->file = (char **)malloc(sizeof(char *) * 2);
 	if (!pars->file)
-		return (-1);
+		pars_exit(pars, "malloc failed");
 	pars->file[0] = 0;
 	while (1)
 	{

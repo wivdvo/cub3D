@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 17:32:46 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 12:15:59 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	init_pars_struct(t_pars *pars)
 	pars->ceiling_g = 0;
 	pars->ceiling_b = 0;
 	pars->map_begin = 0;
+	pars->map_end = 0;
 }
 
 int	find_map_begin(t_pars *pars)
@@ -63,6 +64,7 @@ int	find_map_begin(t_pars *pars)
 		i++;
 	}
 	pars->map_begin = i;
+	printf("begin%s", pars->file[i]);
 }
 
 int	parsing(char *path)
@@ -76,20 +78,24 @@ int	parsing(char *path)
 		return (-1);
 	if (get_colors(&pars) != 0)
 		return (-1);
+	make_map(&pars);
+	
+
+	// printf("floor r%d\n", pars.floor_r);
+	// printf("floor g%d\n", pars.floor_g);
+	// printf("floor b%d\n", pars.floor_b);
+
+	// printf("ceiling r%d\n", pars.ceiling_r);
+	// printf("ceiling g%d\n", pars.ceiling_g);
+	// printf("ceiling b%d\n", pars.ceiling_b);
 
 
-	printf("floor r%d\n", pars.floor_r);
-	printf("floor g%d\n", pars.floor_g);
-	printf("floor b%d\n", pars.floor_b);
-
-	printf("ceiling r%d\n", pars.ceiling_r);
-	printf("ceiling g%d\n", pars.ceiling_g);
-	printf("ceiling b%d\n", pars.ceiling_b);
-
+	pars_exit(&pars, "end");
 	return (0);
 }
 
 int main()
 {
 	return parsing("file.cub");
+	
 }

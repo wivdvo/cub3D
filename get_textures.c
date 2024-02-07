@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 17:35:33 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 12:14:27 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	extract_info(t_pars *pars, char *line, char flag)
 	j = pars->info_start;
 	info = (char *)malloc(pars->info_end - pars->info_start + 2);
 	if (!info)
-		return (-1);
+		pars_exit(pars, "malloc failed");
 	while (j < pars->info_end)
 	{
 		info[i] = line[j];

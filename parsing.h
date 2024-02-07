@@ -30,6 +30,7 @@ typedef struct s_pars
 	int ceiling_g;
 	int ceiling_b;
 	int	map_begin;
+	int	map_end;
 } t_pars;
 
 void	put_error(char *str);
@@ -45,5 +46,9 @@ int	make_array(t_pars *pars, char *path);
 int	realloc_file_array(t_pars *pars, char *line, int y);
 int	read_file_array(t_pars *pars, int fd);
 void	pars_exit(t_pars *pars, char *msg);
+int	make_map(t_pars *pars);
+int make_map_array(t_pars *pars);
+int find_map_end(t_pars *pars);
+int	get_colors(t_pars *pars);
 
 #endif

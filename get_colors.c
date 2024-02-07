@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:13:49 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 17:34:59 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 12:13:23 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	get_colors(t_pars *pars)
 {
 	find_floor(pars);
 	find_ceiling(pars);
+	return (0);
 }
 
 int	check_number(t_pars *pars, char *res, int *value)
@@ -27,9 +28,18 @@ int	check_number(t_pars *pars, char *res, int *value)
 	//printf("res%s\n", res);
 	//printf("itoa%s\n", itoa);
 	if (!itoa)
+	{
+		free(res);
 		pars_exit(pars, "malloc failed");
+	}
 	if (ft_strncmp(res, itoa, ft_strlen(res)) || *value > 255 || *value < 0)
+	{
+		free(res);
+		free(itoa);
 		pars_exit(pars, "2 invalid color value");
+	}
+	free(res);
+	free(itoa);
 }
 
 void	put_color_floor(t_pars *pars, int value, int flag)
@@ -68,7 +78,7 @@ int	extract_color(t_pars *pars, char *line, int flag, char floor_ceiling)
 	j = 0;
 	res = (char *)malloc(4);
 	if (!res)
-		return (-1);
+		pars_exit(pars, "malloc failed");
 	while (i < pars->info_end && line[i])
 	{
 		res[j] = line[i];
