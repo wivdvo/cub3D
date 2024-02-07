@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:26:05 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 14:50:51 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 15:34:08 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,26 +22,31 @@ int make_map_array(t_pars *pars)
 	find_map_end(pars);
 	check_that_nothing_after_end(pars);
 	copy_map(pars);
-	check_that_encased(pars);
+	check_invalid_char(pars);
+	//check_that_encased(pars);
 }
 
-void	check_around(t_pars *pars)
+void	check_invalid_char(t_pars *pars)
 {
-	if (pars->y == 0 && pars->file[pars->y][pars->x] != 1)
-}
+	int x;
+	int y;
 
-void	check_that_encased(t_pars *pars)
-{
-	while (pars->map[pars->y])
+	y = 0;
+	while (pars->map[y])
 	{
-		pars->x = 0;
-		while (pars->map[pars->y][pars->x])
+		x = 0;
+		while (pars->map[y][x])
 		{
-			if (pars->map[pars->y][pars->x] != '1' && pars->map[pars->y][pars->x] != ' ' && pars->map[pars->y][pars->x] != '\n')
-				check_around(pars);
-			pars->x++;
+			if (pars->map[y][x] != '1' && pars->map[y][x] != '0'
+					&& pars->map[y][x] != 'N' && pars->map[y][x] != 'E'
+					&& pars->map[y][x] != 'S' && pars->map[y][x] != 'W'
+					&& pars->map[y][x] != '\n' && pars->map[y][x] != ' ')
+			{
+				pars_exit(pars, "invalid char in map");
+			}
+			x++;
 		}
-		pars->y++;
+		y++;
 	}
 }
 
