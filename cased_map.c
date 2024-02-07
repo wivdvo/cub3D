@@ -97,6 +97,30 @@ int right_check(char dot, int row, int column, char **map)
 	return(wall);
 
 }
+//check if there is wall on left of player or 0
+//return 1 if there is 
+//return 0 if there is no wall
+int left_check(char dot, int row, int column, char **map)
+{
+	int map_row;
+	int map_column;
+	int wall;
+
+	map_row = row;
+	if(column == 0)
+		return (0);
+	map_column = column - 1;
+	wall = 0;
+	while(wall == 0 && map_column != -1)
+	{
+		if(is_end_map_char(map[row][map_column]) == 1)
+			return (0);
+		if(map[row][map_column] == '1')
+			wall = 1;
+		map_column--;
+	}
+	return (wall);
+}
 
 //return number of rows of map
 int get_map_rows(char **map)
@@ -122,8 +146,9 @@ int all_direction_checker(char dot, int xd, int yd, char **map)
 	if(need_check(dot))
 	{
 		int value;
-		value = right_check(dot, xd, yd, map);
-		if(value == 0)
+		value = left_check(dot, xd, yd, map);
+		value += right_check(dot, xd, yd, map);
+		if(value != 2)
 			return(0);
 		//printf("karakter %c need check\n", dot);
 		//checkleft
