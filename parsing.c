@@ -81,7 +81,15 @@ int	parsing(char *path)
 	if (get_colors(&pars) != 0)
 		return (-1);
 	make_map(&pars);
-	
+
+	if(is_map_cased(&pars) != 1)
+	{
+		printf("\nmap is not cased\n");
+	}
+	else 
+	{
+		printf("\nmap is cased\n");
+	}
 
 	// printf("floor r%d\n", pars.floor_r);
 	// printf("floor g%d\n", pars.floor_g);

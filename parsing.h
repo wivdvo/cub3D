@@ -35,6 +35,9 @@ typedef struct s_pars
 	int y;
 } t_pars;
 
+
+void	print_map(t_pars *pars);
+int is_map_cased(t_pars *pars);
 void	put_error(char *str);
 void	print_file_array(t_pars *pars);
 void	init_pars_struct(t_pars *pars);
