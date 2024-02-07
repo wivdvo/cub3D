@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:26:05 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 13:27:12 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 14:50:51 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,27 @@ int make_map_array(t_pars *pars)
 	find_map_end(pars);
 	check_that_nothing_after_end(pars);
 	copy_map(pars);
+	check_that_encased(pars);
+}
+
+void	check_around(t_pars *pars)
+{
+	if (pars->y == 0 && pars->file[pars->y][pars->x] != 1)
+}
+
+void	check_that_encased(t_pars *pars)
+{
+	while (pars->map[pars->y])
+	{
+		pars->x = 0;
+		while (pars->map[pars->y][pars->x])
+		{
+			if (pars->map[pars->y][pars->x] != '1' && pars->map[pars->y][pars->x] != ' ' && pars->map[pars->y][pars->x] != '\n')
+				check_around(pars);
+			pars->x++;
+		}
+		pars->y++;
+	}
 }
 
 void	check_that_nothing_after_end(t_pars *pars)
@@ -33,9 +54,8 @@ void	check_that_nothing_after_end(t_pars *pars)
 	while (pars->file[i])
 	{
 		j = 0;
-		while (pars->file[i][j] || pars->file[i][j] == ' ' || pars->file[i][j] == '\n')
+		while (pars->file[i][j] && (pars->file[i][j] == ' ' || pars->file[i][j] == '\n'))
 			j++;
-		printf("c%d\n", pars->file[i][j]);
 		if (pars->file[i][j] != 0)
 			pars_exit(pars, "there is something after map");
 		i++;

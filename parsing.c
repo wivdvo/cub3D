@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 13:21:04 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/07 14:36:31 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	init_pars_struct(t_pars *pars)
 	pars->ceiling_b = 0;
 	pars->map_begin = 0;
 	pars->map_end = 0;
+	pars->x = 0;
+	pars->y = 0;
 }
 
 int	find_map_begin(t_pars *pars)

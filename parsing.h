@@ -31,6 +31,8 @@ typedef struct s_pars
 	int ceiling_b;
 	int	map_begin;
 	int	map_end;
+	int	x;
+	int y;
 } t_pars;
 
 void	put_error(char *str);
