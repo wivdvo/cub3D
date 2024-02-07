@@ -149,6 +149,30 @@ int down_check(char dot, int row, int column, char **map)
 	return(wall);
 }
 
+int up_check(char dot, int row, int column, char **map)
+{
+	int wall;
+	int map_row;
+	int map_column;
+
+	map_column = column;
+	wall = 0;
+	if(row == 0)
+		return (0);
+	map_row = row - 1;
+	while(map_row != -1 && wall == 0)
+	{
+		if(ft_strlen1(map[map_row]) -1 <= column)
+			return (0);
+		if(is_end_map_char(map[map_row][map_column]) == 1)
+			return(0);
+		if(map[map_row][map_column] == '1')
+			wall = 1;
+		map_row --;
+	}
+	return (wall);
+}
+
 //return number of rows of map
 int get_map_rows(char **map)
 {
@@ -173,10 +197,11 @@ int all_direction_checker(char dot, int xd, int yd, char **map)
 	if(need_check(dot))
 	{
 		int value;
-		value = left_check(dot, xd, yd, map);
-		value += right_check(dot, xd, yd, map);
-		value += down_check(dot, xd, yd, map);
-		if(value != 3)
+		// value = left_check(dot, xd, yd, map);
+		// value += right_check(dot, xd, yd, map);
+		// value += down_check(dot, xd, yd, map);
+		value = up_check(dot,xd, yd, map);
+		if(value == 0)
 			return(0);
 		//printf("karakter %c need check\n", dot);
 		//checkleft
