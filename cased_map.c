@@ -14,6 +14,18 @@
 #include "headers/cub3d.h"
 
 
+//return number of rows of map
+int get_map_rows(char **map)
+{
+	int i;
+
+	i = 0;
+	if(map == NULL || *map==NULL)
+		return (0);
+	while(map[i] != NULL)
+		i++;
+	return(i);
+}
 //Map must be composed of only 6 possible characters
 //0 for empty space 1 for wall
 //NSEW for player start position
@@ -174,18 +186,6 @@ int up_check(char dot, int row, int column, char **map)
 	return (wall);
 }
 
-//return number of rows of map
-int get_map_rows(char **map)
-{
-	int i;
-
-	i = 0;
-	if(map == NULL || *map==NULL)
-		return (0);
-	while(map[i] != NULL)
-		i++;
-	return(i);
-}
 
 int all_direction_checker(char dot, int xd, int yd, char **map)
 {
