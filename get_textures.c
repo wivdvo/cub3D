@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "headers/cub3d.h"
 
 //handels findign paths
 //ret -1 malloc fail

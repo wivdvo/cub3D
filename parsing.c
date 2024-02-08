@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "headers/cub3d.h"
 
 void	init_pars_struct(t_pars *pars)
 {
@@ -104,8 +104,8 @@ int	parsing(char *path)
 	return (0);
 }
 
-int main()
-{
-	return parsing("file.cub");
+// int main()
+// {
+// 	return parsing("file.cub");
 	
-}
+// }

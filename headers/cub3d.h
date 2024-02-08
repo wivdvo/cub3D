@@ -26,6 +26,7 @@
 # include <string.h>
 # include <X11/X.h>
 # include "../libft/libft.h"
+# include "parsing.h"
 
 
 #endif

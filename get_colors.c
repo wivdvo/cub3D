@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "headers/cub3d.h"
 
 int	get_colors(t_pars *pars)
 {

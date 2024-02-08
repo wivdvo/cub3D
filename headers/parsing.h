@@ -1,12 +1,6 @@
 #ifndef PARSING_H
 #define PARSING_H
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
-
 typedef struct s_pars
 {
 	char **map;
@@ -50,6 +44,7 @@ int check_flags(t_pars *pars);
 int	make_array(t_pars *pars, char *path);
 int	realloc_file_array(t_pars *pars, char *line, int y);
 int	read_file_array(t_pars *pars, int fd);
+int	parsing(char *path);
 void	pars_exit(t_pars *pars, char *msg);
 int	make_map(t_pars *pars);
 int make_map_array(t_pars *pars);

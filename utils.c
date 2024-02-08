@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "headers/cub3d.h"
 
 void	put_error(char *str)
 {

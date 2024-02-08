@@ -1,6 +1,7 @@
 NAME = cub3D
 
-SRCS =	cased_map.c \
+SRCS =	main.c \
+		cased_map.c \
 		parsing.c \
 		get_textures.c \
 		get_colors.c \

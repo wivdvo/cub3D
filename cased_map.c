@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 
-#include "parsing.h"
+#include "headers/cub3d.h"
+
 
 //Map must be composed of only 6 possible characters
 //0 for empty space 1 for wall

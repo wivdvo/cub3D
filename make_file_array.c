@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "headers/cub3d.h"
 
 int	make_array(t_pars *pars, char *path)
 {
