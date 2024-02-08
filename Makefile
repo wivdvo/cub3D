@@ -7,7 +7,8 @@ SRCS =	main.c \
 		get_colors.c \
 		make_file_array.c \
 		utils.c \
-		make_map.c
+		make_map.c \
+		render.c
 
 OBJS = $(SRCS:.c=.o)
 

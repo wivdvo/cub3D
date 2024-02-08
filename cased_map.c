@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cased_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 14:58:48 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/07 14:58:51 by fseles           ###   ########.fr       */
+/*   Updated: 2024/02/08 15:00:37 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,7 +208,7 @@ int all_direction_checker(char dot, int xd, int yd, char **map)
 
 //1 map is valid
 //0 map is not jail and should be 
-int is_map_cased(t_pars *pars)
+int is_map_cased(t_cube *cube)
 {
 	char **map;
 	int row;
@@ -216,7 +216,7 @@ int is_map_cased(t_pars *pars)
 	int value;
 
 	row = 0;
-	map = pars->map;
+	map = cube->map;
 	if (map == NULL || *map == NULL)
 		return (put_error("Is map case failed. Map is NULL\n"), 0);
 	while (map[row] != NULL)

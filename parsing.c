@@ -6,83 +6,87 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/08 12:23:57 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/08 15:58:36 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "headers/cub3d.h"
 
-void	init_pars_struct(t_pars *pars)
+void	init_pars_struct(t_cube *cube)
 {
-	pars->file = NULL;
-	pars->map = NULL;
-	pars->max_x = 0;
-	pars->max_y = 0;
-	pars->info_start = 0;
-	pars->info_end = 0;
-	pars->no_path = NULL;
-	pars->ea_path = NULL;
-	pars->we_path = NULL;
-	pars->so_path = NULL;
-	pars->no_flag = 0;
-	pars->ea_flag = 0;
-	pars->we_flag = 0;
-	pars->so_flag = 0;
-	pars->floor_r = 0;
-	pars->floor_g = 0;
-	pars->floor_b = 0;
-	pars->ceiling_r = 0;
-	pars->ceiling_g = 0;
-	pars->ceiling_b = 0;
-	pars->map_begin = 0;
-	pars->map_end = 0;
-	pars->x = 0;
-	pars->y = 0;
+	cube->file = NULL;
+	cube->map = NULL;
+	cube->max_x = 0;
+	cube->max_y = 0;
+	cube->info_start = 0;
+	cube->info_end = 0;
+	cube->no_path = NULL;
+	cube->ea_path = NULL;
+	cube->we_path = NULL;
+	cube->so_path = NULL;
+	cube->no_flag = 0;
+	cube->ea_flag = 0;
+	cube->we_flag = 0;
+	cube->so_flag = 0;
+	cube->floor_r = 0;
+	cube->floor_g = 0;
+	cube->floor_b = 0;
+	cube->ceiling_r = 0;
+	cube->ceiling_g = 0;
+	cube->ceiling_b = 0;
+	cube->map_begin = 0;
+	cube->map_end = 0;
+	cube->x = 0;
+	cube->y = 0;
+	cube->mlx_ptr = NULL;
+	cube->win_ptr = NULL;
+	cube->no_img = NULL;
+	cube->ea_img = NULL;
+	cube->we_img = NULL;
+	cube->so_img= NULL;
 }
 
-int	find_map_begin(t_pars *pars)
+int	find_map_begin(t_cube *cube)
 {
 	int i;
 	int j;
 
 	i = 0;
-	while (pars->file[i])
+	while (cube->file[i])
 	{
 		j = 0;
-		while (pars->file[i][j] && pars->file[i][j] == ' ')
+		while (cube->file[i][j] && cube->file[i][j] == ' ')
 		{
 			j++;
 		}
-		if (pars->file[i][j] == '1' || pars->file[i][j] == '0')
+		if (cube->file[i][j] == '1' || cube->file[i][j] == '0')
 			break;
-		if (pars->file[i][j] == 'N' && pars->file[i][j + 1] != 'O')
+		if (cube->file[i][j] == 'N' && cube->file[i][j + 1] != 'O')
 			break;
-		if (pars->file[i][j] == 'E' && pars->file[i][j + 1] != 'A')
+		if (cube->file[i][j] == 'E' && cube->file[i][j + 1] != 'A')
 			break;
-		if (pars->file[i][j] == 'S' && pars->file[i][j + 1] != 'O')
+		if (cube->file[i][j] == 'S' && cube->file[i][j + 1] != 'O')
 			break;
-		if (pars->file[i][j] == 'W' && pars->file[i][j + 1] != 'E')
+		if (cube->file[i][j] == 'W' && cube->file[i][j + 1] != 'E')
 			break;
 		i++;
 	}
-	pars->map_begin = i;
-	//printf("begin%s", pars->file[i]);
+	cube->map_begin = i;
+	//printf("begin%s", cube->file[i]);
 }
 
-int	parsing(char *path)
+int	parsing(t_cube *cube, char *path)
 {
-	t_pars pars;
-	init_pars_struct(&pars);
-	if (make_array(&pars, path) == -1)
+	if (make_array(cube, path) == -1)
 		return (-1);
-	find_map_begin(&pars);
-	if (get_textures(&pars) != 0)
+	find_map_begin(cube);
+	if (get_textures(cube) != 0)
 		return (-1);
-	if (get_colors(&pars) != 0)
+	if (get_colors(cube) != 0)
 		return (-1);
-	make_map(&pars);
+	make_map(cube);
 
-	if(is_map_cased(&pars) != 1)
+	if(is_map_cased(cube) != 1)
 	{
 		printf("\nmap is not cased\n");
 	}
@@ -91,16 +95,15 @@ int	parsing(char *path)
 		printf("\nmap is cased\n");
 	}
 
-	// printf("floor r%d\n", pars.floor_r);
-	// printf("floor g%d\n", pars.floor_g);
-	// printf("floor b%d\n", pars.floor_b);
+	// printf("floor r%d\n", cube.floor_r);
+	// printf("floor g%d\n", cube.floor_g);
+	// printf("floor b%d\n", cube.floor_b);
 
-	// printf("ceiling r%d\n", pars.ceiling_r);
-	// printf("ceiling g%d\n", pars.ceiling_g);
-	// printf("ceiling b%d\n", pars.ceiling_b);
+	// printf("ceiling r%d\n", cube.ceiling_r);
+	// printf("ceiling g%d\n", cube.ceiling_g);
+	// printf("ceiling b%d\n", cube.ceiling_b);
 
 
-	pars_exit(&pars, NULL);
 	return (0);
 }
 

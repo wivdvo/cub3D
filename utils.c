@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:45:17 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/08 12:21:39 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/08 16:07:33 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ void	put_error(char *str)
 		write(2, "\n", 1);
 }
 
-void	print_file_array(t_pars *pars)
+void	print_file_array(t_cube *cube)
 {
 	int i;
 
 	i = 0;
-	while (pars->file[i])
+	while (cube->file[i])
 	{
-		printf("%s", pars->file[i]);
+		printf("%s", cube->file[i]);
 		i++;
 	}
 	puts("");
@@ -55,21 +55,42 @@ void	free_array(char ***array)
 	free(arr);
 }
 
-void	pars_exit(t_pars *pars, char *msg)
+void	pars_exit(t_cube *cube, char *msg)
 {
 	if (msg)
 		put_error(msg);
-	if (pars->map)
-		free_array(&pars->map);
-	if (pars->file)
-		free_array(&pars->file);
-	if (pars->no_path)
-		free(pars->no_path);
-	if (pars->we_path)
-		free(pars->we_path);
-	if (pars->ea_path)
-		free(pars->ea_path);
-	if (pars->so_path)
-		free(pars->so_path);
+	if (cube->map)
+		free_array(&cube->map);
+	if (cube->file)
+		free_array(&cube->file);
+	if (cube->no_path)
+		free(cube->no_path);
+	if (cube->we_path)
+		free(cube->we_path);
+	if (cube->ea_path)
+		free(cube->ea_path);
+	if (cube->so_path)
+		free(cube->so_path);
 	exit(1);
+}
+
+int	render_exit(t_cube *cube)
+{
+	if (cube->no_img)
+		mlx_destroy_image(cube->mlx_ptr, cube->no_img);
+	if (cube->ea_img)
+		mlx_destroy_image(cube->mlx_ptr, cube->ea_img);
+	if (cube->we_img)
+		mlx_destroy_image(cube->mlx_ptr, cube->we_img);
+	if (cube->so_img)
+		mlx_destroy_image(cube->mlx_ptr, cube->so_img);
+
+
+	if (cube->win_ptr)
+		mlx_destroy_window(cube->mlx_ptr, cube->win_ptr);
+	if (cube->mlx_ptr)
+		mlx_destroy_display(cube->mlx_ptr);
+	free(cube->mlx_ptr);
+	pars_exit(cube, NULL);
+	return (0);
 }

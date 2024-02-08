@@ -2,6 +2,11 @@
 
 int main()
 {
-	parsing("file.cub");
+	t_cube cube;
+	init_pars_struct(&cube);
+	parsing(&cube, "file.cub");
+	render(&cube);
+
+	pars_exit(&cube, NULL);
 	return (0);
 }

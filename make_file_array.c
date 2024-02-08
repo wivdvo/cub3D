@@ -6,25 +6,25 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 12:06:00 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/08 15:00:55 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "headers/cub3d.h"
 
-int	make_array(t_pars *pars, char *path)
+int	make_array(t_cube *cube, char *path)
 {
 	int	fd;
 
 	fd = open(path, O_RDWR);
 	if (fd < 0)
 		return (put_error("open failed"), -1);
-	if (read_file_array(pars, fd) == -1)
+	if (read_file_array(cube, fd) == -1)
 		return (put_error("reading map failed"), -1);
 	return (0);
 }
 
-int	realloc_file_array(t_pars *pars, char *line, int y)
+int	realloc_file_array(t_cube *cube, char *line, int y)
 {
 	char **temp;
 	int	i;
@@ -34,40 +34,40 @@ int	realloc_file_array(t_pars *pars, char *line, int y)
 	if (!temp)
 	{
 		free(line);
-		pars_exit(pars, "malloc failed");
+		pars_exit(cube, "malloc failed");
 	}
-	while (pars->file && pars->file[i])
+	while (cube->file && cube->file[i])
 	{
-		temp[i] = pars->file[i];
+		temp[i] = cube->file[i];
 		i++;
 	}
 	temp[i] = line;
 	temp[++i] = 0;
-	if (pars->file)
-		free(pars->file);
-	pars->file = temp;
+	if (cube->file)
+		free(cube->file);
+	cube->file = temp;
 	return (0);
 }
 
-int	read_file_array(t_pars *pars, int fd)
+int	read_file_array(t_cube *cube, int fd)
 {
 	int	y;
 	char *line;
 
 	y = 0;
-	pars->file = (char **)malloc(sizeof(char *) * 2);
-	if (!pars->file)
-		pars_exit(pars, "malloc failed");
-	pars->file[0] = 0;
+	cube->file = (char **)malloc(sizeof(char *) * 2);
+	if (!cube->file)
+		pars_exit(cube, "malloc failed");
+	cube->file[0] = 0;
 	while (1)
 	{
 		line = get_next_line(fd);
 		if (!line)
 			break;
-		if (realloc_file_array(pars, line, y) == -1)
+		if (realloc_file_array(cube, line, y) == -1)
 			return (-1);
 		y++;
 	}
-	print_file_array(pars);
+	print_file_array(cube);
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 16:04:47 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/06 16:04:48 by fseles           ###   ########.fr       */
+/*   Updated: 2024/02/08 18:33:41 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,17 @@
 # include <X11/X.h>
 # include "../libft/libft.h"
 # include "parsing.h"
+
+
+void render(t_cube *cube);
+int	render_exit(t_cube *cube);
+void	init_mlx(t_cube *cube);
+void	init_img(t_cube *cube);
+void	init_no(t_cube *cube);
+void	init_ea(t_cube *cube);
+void	init_so(t_cube *cube);
+void	init_we(t_cube *cube);
+void raycaster(t_cube *cube);
 
 
 #endif
