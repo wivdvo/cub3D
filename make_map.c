@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:26:05 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 15:34:08 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/08 14:48:02 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ void	check_invalid_char(t_pars *pars)
 {
 	int x;
 	int y;
+	int	flag;
 
 	y = 0;
+	flag = 0;
 	while (pars->map[y])
 	{
 		x = 0;
@@ -44,6 +46,15 @@ void	check_invalid_char(t_pars *pars)
 			{
 				pars_exit(pars, "invalid char in map");
 			}
+			if (pars->map[y][x] == 'N' || pars->map[y][x] == 'E'
+					|| pars->map[y][x] == 'S' || pars->map[y][x] == 'W')
+			{
+				if (flag == 0)
+					flag = 1;
+				else
+					pars_exit(pars, "multible player");
+			}
+
 			x++;
 		}
 		y++;
