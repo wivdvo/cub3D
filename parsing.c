@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/07 14:36:31 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/08 12:23:57 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ int	parsing(char *path)
 	// printf("ceiling b%d\n", pars.ceiling_b);
 
 
-	pars_exit(&pars, "end");
+	pars_exit(&pars, NULL);
 	return (0);
 }
 

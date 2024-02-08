@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:45:17 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/06 16:41:39 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/08 12:21:39 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	put_error(char *str)
 	int i;
 
 	i = 0;
+	write(2, "Error\n", 6);
 	while (str && str[i])
 	{
 		write(2, &str[i], 1);
@@ -57,7 +58,7 @@ void	free_array(char ***array)
 void	pars_exit(t_pars *pars, char *msg)
 {
 	if (msg)
-		write(2, msg, ft_strlen(msg));
+		put_error(msg);
 	if (pars->map)
 		free_array(&pars->map);
 	if (pars->file)
