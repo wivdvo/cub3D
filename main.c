@@ -21,7 +21,7 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
 	*(unsigned int*)dst = color;
 }
-void draw_line(int start_x, int start_y, int end_x, int end_y, t_data *data)
+void draw_line(int start_x, int start_y, int end_x, t_data *data)
 {
 	t_dot begin;
 	t_dot end;
@@ -49,11 +49,11 @@ int main()
 	mlx_win = mlx_new_window(mlx, WIDTH, HEIGHT, "Hello world!");
 	img.img = mlx_new_image(mlx, WIDTH, HEIGHT);
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length, &img.endian);
-	draw_line(5,12, 100, 12, &img);
+	draw_line(5,12, 100, &img);
 	my_mlx_pixel_put(&img, 5, 5, 0x00FF0000);
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0,0);
 	mlx_loop(mlx);
 
-	parsing("file.cub");
+	//parsing("file.cub");
 	return (0);
 }
