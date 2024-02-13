@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 18:25:53 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 19:23:26 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ void	init_mlx(t_cube *cube)
 	cube->win_ptr = mlx_new_window(cube->mlx_ptr, WIDTH, HEIGHT, "*****");
 	if (!cube->win_ptr)
 		pars_exit(cube, "mlx new window failed");
+	cube->img.img = mlx_new_image(cube->mlx_ptr, WIDTH, HEIGHT);
+	cube->img.addr = mlx_get_data_addr(cube->img.img, &cube->img.bits_per_pixel, &cube->img.line_length, &cube->img.endian);
+	my_mlx_pixel_put(&cube->img, 5, 5, 0x00FF0000);
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
 }
 
 void	init_img(t_cube *cube)
@@ -90,7 +94,8 @@ int	handle_input(int keysym, t_cube *cube)
 		x = 0;
 		while (x < WIDTH)
 		{
-			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
+			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
+			my_mlx_pixel_put(&cube->img, x, y, 0x00000000);
 			x++;
 		}
 		y++;
@@ -138,8 +143,10 @@ int	handle_input(int keysym, t_cube *cube)
 
 	if (keysym == XK_d)
 	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
+			cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+		if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
 	}
 
 	if (keysym == XK_a)
@@ -163,7 +170,7 @@ int	handle_input(int keysym, t_cube *cube)
 	// 	if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
 	// 		cube->pos_y -= cube->dir_y * MS;
 	// }
-
+	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
 	raycaster(cube);
 }
 
@@ -281,7 +288,9 @@ void raycaster(t_cube *cube)
 			
 		for (int y = cube->draw_start; y <= cube->draw_end; y++)
 		{
-			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+			if(cube->draw_end != 0 && cube->draw_start != 0 )
+				my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
 		}
 
 		// for (int y = 50; y <= 200; y++)
@@ -291,4 +300,6 @@ void raycaster(t_cube *cube)
 		
 		x++;
 	}
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
+
 }

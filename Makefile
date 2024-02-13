@@ -8,6 +8,7 @@ SRCS =	main.c \
 		make_file_array.c \
 		utils.c \
 		make_map.c \
+		my_mlx_pixel_put.c \
 		render.c
 
 %.o: %.c
