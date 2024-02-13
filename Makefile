@@ -10,7 +10,11 @@ SRCS =	main.c \
 		make_map.c \
 		render.c
 
+%.o: %.c
+	$(CC) -I/usr/include -Imlx_linux -O3 -c $< -o $@
 OBJS = $(SRCS:.c=.o)
+
+
 
 CC = cc
 #CFLAGS = -Wall -Werror -Wextra
@@ -21,7 +25,7 @@ all: $(NAME)
 
 $(NAME):	$(OBJS)
 			cd libft && $(MAKE) && $(MAKE) bonus
-				$(CC) $(OBJS) $(CFLAGS) $(LIBFLAGS) ./libft/libft.a -o $(NAME)
+			$(CC) $(OBJS) libft/libft.a -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
 
 clean:
 		cd libft && $(MAKE) fclean 
