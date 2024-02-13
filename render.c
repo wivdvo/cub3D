@@ -20,6 +20,10 @@ void	init_mlx(t_cube *cube)
 	cube->win_ptr = mlx_new_window(cube->mlx_ptr, WIDTH, HEIGHT, "*****");
 	if (!cube->win_ptr)
 		pars_exit(cube, "mlx new window failed");
+	cube->img.img = mlx_new_image(cube->mlx_ptr, WIDTH, HEIGHT);
+	cube->img.addr = mlx_get_data_addr(cube->img.img, &cube->img.bits_per_pixel, &cube->img.line_length, &cube->img.endian);
+	my_mlx_pixel_put(&cube->img, 5, 5, 0x00FF0000);
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
 }
 
 void	init_img(t_cube *cube)

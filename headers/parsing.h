@@ -1,8 +1,17 @@
 #ifndef PARSING_H
 #define PARSING_H
 
+typedef struct s_data {
+	void *img;
+	char *addr;
+	int bits_per_pixel;
+	int line_length;
+	int endian;
+}	t_data;
+
 typedef struct s_cube
 {
+	t_data img;
 	char **map;
 	char **file;
 	int	max_x;
@@ -62,6 +71,8 @@ typedef struct s_cube
 
 	
 } t_cube;
+
+
 
 
 void	print_map(t_cube *cube);
