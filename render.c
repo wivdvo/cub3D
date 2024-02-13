@@ -94,7 +94,8 @@ int	handle_input(int keysym, t_cube *cube)
 		x = 0;
 		while (x < WIDTH)
 		{
-			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
+			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
+			my_mlx_pixel_put(&cube->img, x, y, 0x00000000);
 			x++;
 		}
 		y++;
@@ -167,7 +168,7 @@ int	handle_input(int keysym, t_cube *cube)
 	// 	if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
 	// 		cube->pos_y -= cube->dir_y * MS;
 	// }
-
+	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
 	raycaster(cube);
 }
 
@@ -285,7 +286,8 @@ void raycaster(t_cube *cube)
 			
 		for (int y = cube->draw_start; y <= cube->draw_end; y++)
 		{
-			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+			my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
 		}
 
 		// for (int y = 50; y <= 200; y++)
@@ -295,4 +297,6 @@ void raycaster(t_cube *cube)
 		
 		x++;
 	}
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
+
 }
