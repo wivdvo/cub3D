@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 18:25:53 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 19:23:26 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,8 +143,10 @@ int	handle_input(int keysym, t_cube *cube)
 
 	if (keysym == XK_d)
 	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
+			cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+		if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
 	}
 
 	if (keysym == XK_a)
