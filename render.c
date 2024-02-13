@@ -289,7 +289,8 @@ void raycaster(t_cube *cube)
 		for (int y = cube->draw_start; y <= cube->draw_end; y++)
 		{
 			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
-			my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
+			if(cube->draw_end != 0 && cube->draw_start != 0 )
+				my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
 		}
 
 		// for (int y = 50; y <= 200; y++)
