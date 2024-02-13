@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 17:57:28 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 18:02:36 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void render(t_cube *cube)
 
 	cube->pos_x = 5;
 	cube->pos_y = 5;
-	cube->dir_x = -1;
+	cube->dir_x = 1;
 	cube->dir_y = 0;
 	cube->plane_x = 0;
 	cube->plane_y = 0.66;
@@ -107,14 +107,7 @@ int	handle_input(int keysym, t_cube *cube)
 
 	
 
-	// if (keysym == XK_w)
-	// {
-		
-	// }
-
-
-
-	if (keysym == XK_d)
+	if (keysym == XK_w)
 	{
 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
 			cube->pos_x += cube->dir_x * MS;
@@ -128,6 +121,22 @@ int	handle_input(int keysym, t_cube *cube)
 		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
 			cube->pos_y -= cube->dir_y * MS;
 	}
+
+
+	// if (keysym == XK_d)
+	// {
+	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+	// 		cube->pos_x += cube->dir_x * MS;
+	// 	if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+	// 		cube->pos_y += cube->dir_y * MS;
+	// }
+	// if (keysym == XK_a)
+	// {
+	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+	// 		cube->pos_x -= cube->dir_x * MS;
+	// 	if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+	// 		cube->pos_y -= cube->dir_y * MS;
+	// }
 
 	raycaster(cube);
 }
