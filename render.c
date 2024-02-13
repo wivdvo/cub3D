@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 15:03:25 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 15:59:40 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,9 +89,9 @@ void raycaster(t_cube *cube)
 	while (x < WIDTH)
 	{
 		//ray pos and dir
-		cube->camera_x = 2 * x / WIDTH - 1;
-		cube->ray_dir_x = cube->dir_x * cube->plane_x * cube->camera_x;
-		cube->ray_dir_y = cube->dir_y * cube->plane_y * cube->camera_x; 
+		cube->camera_x = 2 * x / (double)WIDTH - 1;
+		cube->ray_dir_x = cube->dir_x + cube->plane_x * cube->camera_x;
+		cube->ray_dir_y = cube->dir_y + cube->plane_y * cube->camera_x; 
 
 
 
@@ -135,7 +135,7 @@ void raycaster(t_cube *cube)
 			cube->dis_to_side_y = (cube->map_y + 1.0 - cube->pos_y) * cube->delta_y;
 		}
 
-
+		cube->hit = 0;
 		//do DDD (check every grid line for collision)
 		while (cube->hit == 0)
 		{
@@ -166,22 +166,24 @@ void raycaster(t_cube *cube)
 
 		//claculate height
 		printf("wall dist%f\n", cube->wall_dist);
-		cube->line_height = (int)(HEIGHT / cube->wall_dist);
+		cube->line_height = (int)((double)HEIGHT / cube->wall_dist);
 		printf("line len%d\n", cube->line_height);
 
 		//calc top and bottom pos
-		cube->draw_start = -cube->line_height / 2 + HEIGHT / 2;
+		cube->draw_start = -cube->line_height / 2 + (double)HEIGHT / 2;
 		if (cube->draw_start < 0)
 		{
 			puts("start < 0");
 			cube->draw_start = 0;
 		}
-		cube->draw_end = cube->line_height / 2 + HEIGHT / 2;
+		cube->draw_end = cube->line_height / 2 + (double)HEIGHT / 2;
 		if (cube->draw_end < 0)
 		{
 			puts("end < 0");
 			cube->draw_end = 0;
-		}	
+		}
+		
+			
 		for (int y = cube->draw_start; y <= cube->draw_end; y++)
 		{
 			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
