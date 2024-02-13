@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 16:04:47 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/08 18:33:41 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/13 13:42:28 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # define HEIGHT 1080
 # include <fcntl.h>
 # include <math.h>
-# include <mlx.h>
+//# include <mlx.h>
+#include "../mlx_linux/mlx.h"
 # include <stdio.h>
 # include <stdlib.h>
 # include <sys/stat.h>
