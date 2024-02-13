@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 18:02:36 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 18:14:54 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,20 @@ int	handle_input(int keysym, t_cube *cube)
 		render_exit(cube);
 	}
 
-	if (keysym == XK_Right)
+	int y = 0;
+	int x;
+	while (y < HEIGHT)
+	{
+		x = 0;
+		while (x < WIDTH)
+		{
+			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
+			x++;
+		}
+		y++;
+	}
+
+	if (keysym == XK_Left)
 	{
 		double old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
@@ -93,7 +106,7 @@ int	handle_input(int keysym, t_cube *cube)
 		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
 	}
-	if (keysym == XK_Left)
+	if (keysym == XK_Right)
 	{
 		double old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
