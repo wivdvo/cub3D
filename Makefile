@@ -11,7 +11,7 @@ SRCS =	main.c \
 		render.c
 
 %.o: %.c
-	$(CC) -I/usr/include -Imlx_linux -O3 -c $< -o $@
+	$(CC) -I/usr/include -g -Imlx_linux -O3 -c $< -o $@
 OBJS = $(SRCS:.c=.o)
 
 
@@ -25,7 +25,7 @@ all: $(NAME)
 
 $(NAME):	$(OBJS)
 			cd libft && $(MAKE) && $(MAKE) bonus
-			$(CC) $(OBJS) libft/libft.a -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
+			$(CC) $(OBJS) -g libft/libft.a -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
 
 clean:
 		cd libft && $(MAKE) fclean 

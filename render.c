@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/08 18:48:21 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/13 15:03:25 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	init_we(t_cube *cube)
 void render(t_cube *cube)
 {
 	init_mlx(cube);
-	init_img(cube);
+	// init_img(cube);
 
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
@@ -72,12 +72,14 @@ void raycaster(t_cube *cube)
 	int x;
 
 	x = 0;
-	cube->pos_x = 2;
-	cube->pos_y = 2;
+	cube->pos_x = 5;
+	cube->pos_y = 5;
 	cube->dir_x = 1;
 	cube->dir_y = 0;
 	cube->plane_x = 0;
 	cube->plane_y = 0.66;
+
+	printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
 
 
 	//very high number ;; meant to be infity ;; if it would be division through 0 do infinity instead
