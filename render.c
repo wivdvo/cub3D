@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 15:59:40 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 17:57:28 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,11 +60,76 @@ void render(t_cube *cube)
 	init_mlx(cube);
 	// init_img(cube);
 
+
+	cube->pos_x = 5;
+	cube->pos_y = 5;
+	cube->dir_x = -1;
+	cube->dir_y = 0;
+	cube->plane_x = 0;
+	cube->plane_y = 0.66;
+
+
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
-	//mlx_key_hook(cube->win_ptr, handle_input, cube);
+	mlx_key_hook(cube->win_ptr, handle_input, cube);
 	mlx_hook(cube->win_ptr, 17, 0L, render_exit, cube);
 	mlx_loop(cube->mlx_ptr);
+}
+
+int	handle_input(int keysym, t_cube *cube)
+{
+	if (keysym == XK_Escape)
+	{
+		render_exit(cube);
+	}
+
+	if (keysym == XK_Right)
+	{
+		double old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
+		cube->dir_y = old_dir_x * sin(-RS) + cube->dir_y * cos(-RS);
+
+		double old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
+		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
+	}
+	if (keysym == XK_Left)
+	{
+		double old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
+		cube->dir_y = old_dir_x * sin(RS) + cube->dir_y * cos(RS);
+
+		double old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
+		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
+	}
+	
+
+	
+
+	// if (keysym == XK_w)
+	// {
+		
+	// }
+
+
+
+	if (keysym == XK_d)
+	{
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+			cube->pos_x += cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y += cube->dir_y * MS;
+	}
+	if (keysym == XK_a)
+	{
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+			cube->pos_x -= cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y -= cube->dir_y * MS;
+	}
+
+	raycaster(cube);
 }
 
 void raycaster(t_cube *cube)
@@ -72,12 +137,7 @@ void raycaster(t_cube *cube)
 	int x;
 
 	x = 0;
-	cube->pos_x = 5;
-	cube->pos_y = 5;
-	cube->dir_x = 1;
-	cube->dir_y = 0;
-	cube->plane_x = 0;
-	cube->plane_y = 0.66;
+
 
 	printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
 
@@ -165,9 +225,9 @@ void raycaster(t_cube *cube)
 
 
 		//claculate height
-		printf("wall dist%f\n", cube->wall_dist);
+		//printf("wall dist%f\n", cube->wall_dist);
 		cube->line_height = (int)((double)HEIGHT / cube->wall_dist);
-		printf("line len%d\n", cube->line_height);
+		//printf("line len%d\n", cube->line_height);
 
 		//calc top and bottom pos
 		cube->draw_start = -cube->line_height / 2 + (double)HEIGHT / 2;
