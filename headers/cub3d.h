@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 16:04:47 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/13 18:27:17 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/13 18:35:37 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # define WIDTH 1920
 # define HEIGHT 1080
 # define MS 1
-# define RS 1
+# define RS 0.2
 # include <fcntl.h>
 # include <math.h>
 //# include <mlx.h>
