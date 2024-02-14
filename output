@@ -3,7 +3,7 @@ SO ./fseles.xpm
 EA ./fseles.xpm
 NO ./fseles.xpm
 
-F 255,0,      255
+F 255,0,255
 C 0, 0 , 0
 
 
@@ -35,7681 +35,5764 @@ C 0, 0 , 0
 ----------------
 
 map is cased
-wall dist7999999999999999033177091866624.000000
-line len0
+pos x:5.000000, pos y:5.000000
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
 end < 0
 wall dist0.000000
 line len-2147483648
-start < 0
+end < 0
+wall dist0.000000
+line len-2147483648
 end < 0
