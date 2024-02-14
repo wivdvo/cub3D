@@ -89,17 +89,18 @@ int	handle_input(int keysym, t_cube *cube)
 
 	int y = 0;
 	int x;
-	while (y < HEIGHT)
-	{
-		x = 0;
-		while (x < WIDTH)
-		{
-			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
-			my_mlx_pixel_put(&cube->img, x, y, 0x00000000);
-			x++;
-		}
-		y++;
-	}
+	paint_ceiling_floor(cube);
+	// while (y < HEIGHT)
+	// {
+	// 	x = 0;
+	// 	while (x < WIDTH)
+	// 	{
+	// 		//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
+	// 		my_mlx_pixel_put(&cube->img, x, y, 0x00000000);
+	// 		x++;
+	// 	}
+	// 	y++;
+	// }
 
 	if (keysym == XK_Left)
 	{

@@ -41,6 +41,7 @@ void	init_no(t_cube *cube);
 void	init_ea(t_cube *cube);
 void	init_so(t_cube *cube);
 void	init_we(t_cube *cube);
+void paint_ceiling_floor(t_cube *cube);
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color);
 void raycaster(t_cube *cube);
 int	handle_input(int keysym, t_cube *cube);
