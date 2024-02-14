@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 16:04:47 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/14 16:29:00 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/14 18:43:46 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # define WIDTH 1920
 # define HEIGHT 1080
+# define IMG_W 1000
+# define IMG_H 1000
 # define MS 0.05
 # define RS 0.02
 # include <fcntl.h>

@@ -74,6 +74,10 @@ typedef struct s_cube
 	int		d_pressed;
 	int		left_pressed;
 	int		right_pressed;
+
+	double wall_x;
+	int		img_x;
+	double step;
 	
 } t_cube;
 

@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 16:30:14 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/14 19:30:03 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ void	init_mlx(t_cube *cube)
 void	init_img(t_cube *cube)
 {
 	init_no(cube);
+	init_ea(cube);
+	init_so(cube);
+	init_we(cube);
 }
 
 void	init_no(t_cube *cube)
@@ -62,11 +65,14 @@ void	init_we(t_cube *cube)
 void render(t_cube *cube)
 {
 	init_mlx(cube);
-	// init_img(cube);
+	init_img(cube);
+
+	if (!cube->ea_img)
+		puts("its not hree");
 
 
-	cube->pos_x = 5;
-	cube->pos_y = 5;
+	cube->pos_x = 2;
+	cube->pos_y = 2;
 	cube->dir_x = 1;
 	cube->dir_y = 0;
 	cube->plane_x = 0;
@@ -357,18 +363,83 @@ void raycaster(t_cube *cube)
 			cube->draw_end = 0;
 		}
 		
-			
-		for (int y = cube->draw_start; y <= cube->draw_end; y++)
+
+		//calculate x coordinate of wall
+		if (cube->side == 1)
 		{
-			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
-			if(cube->draw_end != 0 && cube->draw_start != 0 )
-				my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
+			cube->wall_x = cube->pos_y + cube->wall_dist * cube->dir_y;
+		}
+		else
+		{
+			cube->wall_x = cube->pos_x + cube->wall_dist * cube->dir_x;
+		}
+		cube->wall_x -= floor((cube->wall_x));
+
+		//calcutle x corrdiante of img
+		cube->img_x = (int)(cube->wall_x * (double)IMG_W);
+		if (cube->side == 1 && cube->dir_x > 0)
+		{
+			cube->img_x = IMG_W - cube->img_x - 1;
+		}
+		if (cube->side == 2 && cube->dir_y < 0)
+		{
+			cube->img_x = IMG_W - cube->img_x - 1;
 		}
 
-		// for (int y = 50; y <= 200; y++)
+		cube->step = 1.0 * IMG_H / IMG_W;
+
+		//getting pixels
+		double img_pos;
+		int		img_y;
+		int			color;
+
+		cube->img.addr = mlx_get_data_addr(cube->no_img, &cube->img.bits_per_pixel, &cube->img.line_length, &cube->img.endian);
+
+		img_pos = (cube->draw_start - HEIGHT / 2 + cube->line_height / 2) * cube->step;
+		for (int y = cube->draw_start; y < cube->draw_end; y++)
+		{
+			img_y = (int)cube->pos_x & (IMG_H - 1);
+			img_pos += cube->step;
+			
+
+			
+
+			color = *(int*)(cube->img.addr + (img_y * cube->img.line_length + cube->img_x * (cube->img.bits_per_pixel / 8)));
+
+			//printf("color:%x\n", color);
+
+			if(cube->draw_end != 0 && cube->draw_start != 0 )
+				my_mlx_pixel_put(&cube->img, x, y, color);
+			else
+				puts("this problem");
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// for (int y = cube->draw_start; y <= cube->draw_end; y++)
 		// {
-		// 	mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+		// 	//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+		// 	if(cube->draw_end != 0 && cube->draw_start != 0 )
+		// 		my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
 		// }
+
+
 		
 		x++;
 	}

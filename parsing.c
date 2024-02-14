@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 16:15:00 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/14 18:20:57 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,9 @@ void	init_pars_struct(t_cube *cube)
 	cube->d_pressed = 0;
 	cube->left_pressed = 0;
 	cube->right_pressed = 0;
+	cube->wall_x = 0;
+	cube->img_x = 0;
+	cube->step = 0;
 }
 
 int	find_map_begin(t_cube *cube)
