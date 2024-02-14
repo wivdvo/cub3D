@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 15:55:22 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/14 15:57:31 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,105 @@ void render(t_cube *cube)
 	mlx_hook(cube->win_ptr, 17, 0L, render_exit, cube);
 	mlx_loop(cube->mlx_ptr);
 }
+
+
+int	key_press(int keysym, t_cube *cube)
+{
+	if (keysym == XK_w)
+		cube->w_pressed = 1;
+    else if (keysym == XK_s)
+        cube->s_pressed = 1;
+    else if (keysym == XK_a)
+        cube->a_pressed = 1;
+    else if (keysym == XK_d)
+        cube->d_pressed = 1;
+    else if (keysym == XK_Left)
+        cube->left_pressed = 1;
+    else if (keysym == XK_Right)
+        cube->right_pressed = 1;
+}
+
+int	key_release(int keysym, t_cube *cube)
+{
+	if (keysym == XK_w)
+		cube->w_pressed = 0;
+    else if (keysym == XK_s)
+        cube->s_pressed = 0;
+    else if (keysym == XK_a)
+        cube->a_pressed = 0;
+    else if (keysym == XK_d)
+        cube->d_pressed = 0;
+    else if (keysym == XK_Left)
+        cube->left_pressed = 0;
+    else if (keysym == XK_Right)
+        cube->right_pressed = 0;
+}
+
+int	game_loop(t_cube *cube)
+{
+	int y = 0;
+	int x;
+	while (y < HEIGHT)
+	{
+		x = 0;
+		while (x < WIDTH)
+		{
+			my_mlx_pixel_put(&cube->img.img, x, y, 0x00000000);
+			x++;
+		}
+		y++;
+	}
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img, 0, 0);
+	if (cube->w_pressed)
+	{
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+			cube->pos_x += cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y += cube->dir_y * MS;
+	}
+	if (cube->a_pressed)
+	{
+		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+		cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
+	}
+	if (cube->s_pressed)
+	{
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+			cube->pos_x -= cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y -= cube->dir_y * MS;
+	}
+	if (cube->d_pressed)
+	{
+		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+	}
+
+	if (cube->left_pressed)
+	{
+		double old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
+		cube->dir_y = old_dir_x * sin(-RS) + cube->dir_y * cos(-RS);
+
+		double old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
+		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
+	}
+	if (cube->right_pressed)
+	{
+		double old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
+		cube->dir_y = old_dir_x * sin(RS) + cube->dir_y * cos(RS);
+
+		double old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
+		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
+	}
+	raycaster(cube);
+}
+
+
+
 
 int	handle_input(int keysym, t_cube *cube)
 {
