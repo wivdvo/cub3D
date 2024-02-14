@@ -68,7 +68,12 @@ typedef struct s_cube
 	int		line_height;
 	int		draw_start;
 	int		draw_end;
-
+	int		w_pressed;
+	int		a_pressed;
+	int		s_pressed;
+	int		d_pressed;
+	int		left_pressed;
+	int		right_pressed;
 	
 } t_cube;
 

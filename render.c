@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 15:57:31 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/14 16:30:14 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,14 +75,22 @@ void render(t_cube *cube)
 
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
-	mlx_key_hook(cube->win_ptr, handle_input, cube);
+	//mlx_key_hook(cube->win_ptr, handle_input, cube);
+
 	mlx_hook(cube->win_ptr, 17, 0L, render_exit, cube);
+
+	mlx_hook(cube->win_ptr, 2, (1L<<0), &key_press, cube);
+    mlx_hook(cube->win_ptr, 3, (1L<<1), &key_release, cube);
+
+
+	mlx_loop_hook(cube->mlx_ptr, &game_loop, cube);
 	mlx_loop(cube->mlx_ptr);
 }
 
 
 int	key_press(int keysym, t_cube *cube)
 {
+	puts("key pressed");
 	if (keysym == XK_w)
 		cube->w_pressed = 1;
     else if (keysym == XK_s)
@@ -99,6 +107,7 @@ int	key_press(int keysym, t_cube *cube)
 
 int	key_release(int keysym, t_cube *cube)
 {
+	puts("key released");
 	if (keysym == XK_w)
 		cube->w_pressed = 0;
     else if (keysym == XK_s)
@@ -115,43 +124,32 @@ int	key_release(int keysym, t_cube *cube)
 
 int	game_loop(t_cube *cube)
 {
-	int y = 0;
-	int x;
-	while (y < HEIGHT)
-	{
-		x = 0;
-		while (x < WIDTH)
-		{
-			my_mlx_pixel_put(&cube->img.img, x, y, 0x00000000);
-			x++;
-		}
-		y++;
-	}
-	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img, 0, 0);
 	if (cube->w_pressed)
 	{
 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
 			cube->pos_y += cube->dir_y * MS;
+		raycaster(cube);
 	}
-	if (cube->a_pressed)
-	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
-	}
+	// if (cube->a_pressed)
+	// {
+	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
+	// }
 	if (cube->s_pressed)
 	{
 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
 			cube->pos_x -= cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
 			cube->pos_y -= cube->dir_y * MS;
+		raycaster(cube);
 	}
-	if (cube->d_pressed)
-	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
-	}
+	// if (cube->d_pressed)
+	// {
+	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+	// 	cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+	// }
 
 	if (cube->left_pressed)
 	{
@@ -162,6 +160,7 @@ int	game_loop(t_cube *cube)
 		double old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
+		raycaster(cube);
 	}
 	if (cube->right_pressed)
 	{
@@ -172,79 +171,79 @@ int	game_loop(t_cube *cube)
 		double old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
 		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
+		raycaster(cube);
 	}
-	raycaster(cube);
 }
 
 
 
 
-int	handle_input(int keysym, t_cube *cube)
-{
-	if (keysym == XK_Escape)
-	{
-		render_exit(cube);
-	}
+// int	handle_input(int keysym, t_cube *cube)
+// {
+// 	if (keysym == XK_Escape)
+// 	{
+// 		render_exit(cube);
+// 	}
 
-	paint_ceiling_floor(cube);
+// 	paint_ceiling_floor(cube);
 
 
-	if (keysym == XK_Left)
-	{
-		double old_dir_x = cube->dir_x;
-		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
-		cube->dir_y = old_dir_x * sin(-RS) + cube->dir_y * cos(-RS);
+// 	if (keysym == XK_Left)
+// 	{
+// 		double old_dir_x = cube->dir_x;
+// 		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
+// 		cube->dir_y = old_dir_x * sin(-RS) + cube->dir_y * cos(-RS);
 
-		double old_plane_x = cube->plane_x;
-		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
-		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
-	}
-	if (keysym == XK_Right)
-	{
-		double old_dir_x = cube->dir_x;
-		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
-		cube->dir_y = old_dir_x * sin(RS) + cube->dir_y * cos(RS);
+// 		double old_plane_x = cube->plane_x;
+// 		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
+// 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
+// 	}
+// 	if (keysym == XK_Right)
+// 	{
+// 		double old_dir_x = cube->dir_x;
+// 		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
+// 		cube->dir_y = old_dir_x * sin(RS) + cube->dir_y * cos(RS);
 
-		double old_plane_x = cube->plane_x;
-		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
-		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
-	}
+// 		double old_plane_x = cube->plane_x;
+// 		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
+// 		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
+// 	}
 	
 
 	
 
-	if (keysym == XK_w)
-	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
-			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-			cube->pos_y += cube->dir_y * MS;
-	}
-	if (keysym == XK_s)
-	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
-			cube->pos_x -= cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-			cube->pos_y -= cube->dir_y * MS;
-	}
+// 	if (keysym == XK_w)
+// 	{
+// 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+// 			cube->pos_x += cube->dir_x * MS;
+// 		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+// 			cube->pos_y += cube->dir_y * MS;
+// 	}
+// 	if (keysym == XK_s)
+// 	{
+// 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+// 			cube->pos_x -= cube->dir_x * MS;
+// 		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+// 			cube->pos_y -= cube->dir_y * MS;
+// 	}
 
 
-	// if (keysym == XK_d)
-	// {
-	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
-	// 		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-	// 	if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
-	// 		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
-	// }
+// 	// if (keysym == XK_d)
+// 	// {
+// 	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
+// 	// 		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+// 	// 	if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
+// 	// 		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+// 	// }
 
-	// if (keysym == XK_a)
-	// {
-	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
-	// }
+// 	// if (keysym == XK_a)
+// 	// {
+// 	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+// 	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
+// 	// }
 
-	raycaster(cube);
-}
+// 	raycaster(cube);
+// }
 
 void raycaster(t_cube *cube)
 {
@@ -252,7 +251,7 @@ void raycaster(t_cube *cube)
 
 	x = 0;
 
-
+	paint_ceiling_floor(cube);
 	printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
 	printf("dir x:%f, dir y:%f\n", cube->dir_x, cube->dir_y);
 
