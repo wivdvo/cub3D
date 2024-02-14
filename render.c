@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 19:23:26 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/14 15:55:22 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,20 +87,8 @@ int	handle_input(int keysym, t_cube *cube)
 		render_exit(cube);
 	}
 
-	int y = 0;
-	int x;
 	paint_ceiling_floor(cube);
-	// while (y < HEIGHT)
-	// {
-	// 	x = 0;
-	// 	while (x < WIDTH)
-	// 	{
-	// 		//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
-	// 		my_mlx_pixel_put(&cube->img, x, y, 0x00000000);
-	// 		x++;
-	// 	}
-	// 	y++;
-	// }
+
 
 	if (keysym == XK_Left)
 	{
@@ -142,36 +130,20 @@ int	handle_input(int keysym, t_cube *cube)
 	}
 
 
-	if (keysym == XK_d)
-	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
-			cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
-			cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
-	}
-
-	if (keysym == XK_a)
-	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
-	}
-
-
 	// if (keysym == XK_d)
 	// {
-	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
-	// 		cube->pos_x += cube->dir_x * MS;
-	// 	if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-	// 		cube->pos_y += cube->dir_y * MS;
+	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
+	// 		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+	// 	if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
+	// 		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
 	// }
+
 	// if (keysym == XK_a)
 	// {
-	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
-	// 		cube->pos_x -= cube->dir_x * MS;
-	// 	if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-	// 		cube->pos_y -= cube->dir_y * MS;
+	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
 	// }
-	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
+
 	raycaster(cube);
 }
 
@@ -183,6 +155,7 @@ void raycaster(t_cube *cube)
 
 
 	printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
+	printf("dir x:%f, dir y:%f\n", cube->dir_x, cube->dir_y);
 
 
 	//very high number ;; meant to be infity ;; if it would be division through 0 do infinity instead
