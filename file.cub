@@ -3,8 +3,8 @@ SO ./fseles.xpm
 EA ./fseles.xpm
 NO ./fseles.xpm
 
-F 255,0,255
-C 0, 0 , 0
+F 241,250,218
+C 38, 80, 115
 
 
 1111111111111111111111111
