@@ -10,7 +10,8 @@ SRCS =	main.c \
 		make_map.c \
 		my_mlx_pixel_put.c \
 		paint_ceiling_floor.c \
-		render.c
+		render.c \
+		spawn.c
 
 OBJS = $(SRCS:.c=.o)
 

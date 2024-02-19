@@ -65,13 +65,14 @@ void render(t_cube *cube)
 	// init_img(cube);
 
 
-	cube->pos_x = 5;
-	cube->pos_y = 5;
+	cube->pos_x = 2;
+	cube->pos_y = 3;
 	cube->dir_x = 1;
 	cube->dir_y = 0;
 	cube->plane_x = 0;
 	cube->plane_y = 0.66;
-
+	
+	spawn_player(cube, WEST);
 
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);

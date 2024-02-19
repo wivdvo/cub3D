@@ -17,6 +17,10 @@
 # define HEIGHT 1080
 # define MS 0.05
 # define RS 0.02
+# define NORTH 1
+# define EAST 2
+# define SOUTH 3
+# define WEST 4
 # include <fcntl.h>
 # include <math.h>
 # include <mlx.h>
@@ -35,6 +39,7 @@
 
 void render(t_cube *cube);
 int	render_exit(t_cube *cube);
+void spawn_player(t_cube *cube, int spawn_direction);
 void	init_mlx(t_cube *cube);
 void	init_img(t_cube *cube);
 void	init_no(t_cube *cube);
