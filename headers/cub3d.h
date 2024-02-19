@@ -19,8 +19,8 @@
 # define RS 0.02
 # include <fcntl.h>
 # include <math.h>
-//# include <mlx.h>
-#include "../mlx_linux/mlx.h"
+# include <mlx.h>
+//#include "../mlx_linux/mlx.h"
 # include <stdio.h>
 # include <stdlib.h>
 # include <sys/stat.h>
