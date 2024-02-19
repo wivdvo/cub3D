@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 16:30:14 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/19 12:37:11 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,11 +132,12 @@ int	game_loop(t_cube *cube)
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
-	// if (cube->a_pressed)
-	// {
-	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
-	// }
+	if (cube->a_pressed)
+	{
+		cube->pos_x -= cube->dir_x * MS;
+		cube->pos_y += cube->dir_y * MS;
+		raycaster(cube);
+	}
 	if (cube->s_pressed)
 	{
 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
@@ -145,11 +146,12 @@ int	game_loop(t_cube *cube)
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}
-	// if (cube->d_pressed)
-	// {
-	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-	// 	cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
-	// }
+	if (cube->d_pressed)
+	{
+		cube->pos_x += cube->dir_x * MS;
+		cube->pos_y -= cube->dir_y * MS;
+		raycaster(cube);
+	}
 
 	if (cube->left_pressed)
 	{
