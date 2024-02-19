@@ -123,8 +123,6 @@ int	key_release(int keysym, t_cube *cube)
         cube->right_pressed = 0;
 }
 
-float degToRad(int a) { return a*3.14/180.0;}
-int FixAng(int a){ if(a>359){ a-=360;} if(a<0){ a+=360;} return a;}
 int	game_loop(t_cube *cube)
 {
 	if (cube->w_pressed)
