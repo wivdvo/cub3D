@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 20:24:59 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/19 12:31:48 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,40 +166,83 @@ void render(t_cube *cube)
 
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
-	mlx_key_hook(cube->win_ptr, handle_input, cube);
+	//mlx_key_hook(cube->win_ptr, handle_input, cube);
+
 	mlx_hook(cube->win_ptr, 17, 0L, render_exit, cube);
 
+	mlx_hook(cube->win_ptr, 2, (1L<<0), &key_press, cube);
+    mlx_hook(cube->win_ptr, 3, (1L<<1), &key_release, cube);
 
-	//KINDA BROKEN
-	// mlx_hook(cube->win_ptr, 2, 0, &key_press, cube);
-	// mlx_hook(cube->win_ptr, 3, 0, &key_release, cube);
 
-	// mlx_loop_hook(cube->mlx_ptr, &game_loop, cube);
-
+	mlx_loop_hook(cube->mlx_ptr, &game_loop, cube);
 	mlx_loop(cube->mlx_ptr);
 }
 
-int	handle_input(int keysym, t_cube *cube)
+
+int	key_press(int keysym, t_cube *cube)
 {
-	if (keysym == XK_Escape)
-	{
-		render_exit(cube);
-	}
+	puts("key pressed");
+	if (keysym == XK_w)
+		cube->w_pressed = 1;
+    else if (keysym == XK_s)
+        cube->s_pressed = 1;
+    else if (keysym == XK_a)
+        cube->a_pressed = 1;
+    else if (keysym == XK_d)
+        cube->d_pressed = 1;
+    else if (keysym == XK_Left)
+        cube->left_pressed = 1;
+    else if (keysym == XK_Right)
+        cube->right_pressed = 1;
+}
 
-	int y = 0;
-	int x;
-	while (y < HEIGHT)
-	{
-		x = 0;
-		while (x < WIDTH)
-		{
-			mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0x00000000);
-			x++;
-		}
-		y++;
-	}
+int	key_release(int keysym, t_cube *cube)
+{
+	puts("key released");
+	if (keysym == XK_w)
+		cube->w_pressed = 0;
+    else if (keysym == XK_s)
+        cube->s_pressed = 0;
+    else if (keysym == XK_a)
+        cube->a_pressed = 0;
+    else if (keysym == XK_d)
+        cube->d_pressed = 0;
+    else if (keysym == XK_Left)
+        cube->left_pressed = 0;
+    else if (keysym == XK_Right)
+        cube->right_pressed = 0;
+}
 
-	if (keysym == XK_Left)
+int	game_loop(t_cube *cube)
+{
+	if (cube->w_pressed)
+	{
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+			cube->pos_x += cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y += cube->dir_y * MS;
+		raycaster(cube);
+	}
+	// if (cube->a_pressed)
+	// {
+	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
+	// }
+	if (cube->s_pressed)
+	{
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+			cube->pos_x -= cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y -= cube->dir_y * MS;
+		raycaster(cube);
+	}
+	// if (cube->d_pressed)
+	// {
+	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+	// 	cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+	// }
+
+	if (cube->left_pressed)
 	{
 		double old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
@@ -208,8 +251,9 @@ int	handle_input(int keysym, t_cube *cube)
 		double old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
+		raycaster(cube);
 	}
-	if (keysym == XK_Right)
+	if (cube->right_pressed)
 	{
 		double old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
@@ -218,57 +262,79 @@ int	handle_input(int keysym, t_cube *cube)
 		double old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
 		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
+		raycaster(cube);
 	}
-	
-
-	
-
-	if (keysym == XK_w)
-	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
-			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-			cube->pos_y += cube->dir_y * MS;
-	}
-	if (keysym == XK_s)
-	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
-			cube->pos_x -= cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-			cube->pos_y -= cube->dir_y * MS;
-	}
-
-
-	if (keysym == XK_d)
-	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
-	}
-
-	if (keysym == XK_a)
-	{
-		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-		cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
-	}
-
-
-	// if (keysym == XK_d)
-	// {
-	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
-	// 		cube->pos_x += cube->dir_x * MS;
-	// 	if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-	// 		cube->pos_y += cube->dir_y * MS;
-	// }
-	// if (keysym == XK_a)
-	// {
-	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
-	// 		cube->pos_x -= cube->dir_x * MS;
-	// 	if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
-	// 		cube->pos_y -= cube->dir_y * MS;
-	// }
-
-	raycaster(cube);
 }
+
+
+
+
+// int	handle_input(int keysym, t_cube *cube)
+// {
+// 	if (keysym == XK_Escape)
+// 	{
+// 		render_exit(cube);
+// 	}
+
+// 	paint_ceiling_floor(cube);
+
+
+// 	if (keysym == XK_Left)
+// 	{
+// 		double old_dir_x = cube->dir_x;
+// 		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
+// 		cube->dir_y = old_dir_x * sin(-RS) + cube->dir_y * cos(-RS);
+
+// 		double old_plane_x = cube->plane_x;
+// 		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
+// 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
+// 	}
+// 	if (keysym == XK_Right)
+// 	{
+// 		double old_dir_x = cube->dir_x;
+// 		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
+// 		cube->dir_y = old_dir_x * sin(RS) + cube->dir_y * cos(RS);
+
+// 		double old_plane_x = cube->plane_x;
+// 		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
+// 		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
+// 	}
+	
+
+	
+
+// 	if (keysym == XK_w)
+// 	{
+// 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+// 			cube->pos_x += cube->dir_x * MS;
+// 		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+// 			cube->pos_y += cube->dir_y * MS;
+// 	}
+// 	if (keysym == XK_s)
+// 	{
+// 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+// 			cube->pos_x -= cube->dir_x * MS;
+// 		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+// 			cube->pos_y -= cube->dir_y * MS;
+// 	}
+
+
+// 	// if (keysym == XK_d)
+// 	// {
+// 	// 	if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + (cube->dir_x - 1) * MS)] != '1')
+// 	// 		cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+// 	// 	if (cube->map[(int)(cube->pos_y + (cube->dir_y + 1) * MS)][(int)(cube->pos_x)] != '1')
+// 	// 		cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
+// 	// }
+
+// 	// if (keysym == XK_a)
+// 	// {
+// 	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+// 	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
+// 	// }
+
+// 	raycaster(cube);
+// }
 
 void raycaster(t_cube *cube)
 {
@@ -276,8 +342,9 @@ void raycaster(t_cube *cube)
 
 	x = 0;
 
-
+	paint_ceiling_floor(cube);
 	printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
+	printf("dir x:%f, dir y:%f\n", cube->dir_x, cube->dir_y);
 
 
 	//very high number ;; meant to be infity ;; if it would be division through 0 do infinity instead
@@ -375,16 +442,17 @@ void raycaster(t_cube *cube)
 			cube->draw_start = 0;
 		}
 		cube->draw_end = cube->line_height / 2 + (double)HEIGHT / 2;
-		if (cube->draw_end < 0)
+		if (cube->draw_end > HEIGHT)
 		{
 			puts("end < 0");
-			cube->draw_end = 0;
+			cube->draw_end = HEIGHT - 1;
 		}
 		
 			
-		for (int y = cube->draw_start; y <= cube->draw_end; y++)
+		for (int y = cube->draw_start; y < cube->draw_end; y++)
 		{
-			my_mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+			my_mlx_pixel_put(&cube->img, x, y, 0x00FF0000);
 		}
 
 		// for (int y = 50; y <= 200; y++)

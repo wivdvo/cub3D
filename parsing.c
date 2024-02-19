@@ -6,7 +6,7 @@
 /*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/13 20:11:14 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/19 12:31:54 by willem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,19 +95,20 @@ int	parsing(t_cube *cube, char *path)
 	if(is_map_cased(cube) != 1)
 	{
 		printf("\nmap is not cased\n");
+		pars_exit(cube, NULL);
 	}
 	else 
 	{
 		printf("\nmap is cased\n");
 	}
 
-	// printf("floor r%d\n", cube.floor_r);
-	// printf("floor g%d\n", cube.floor_g);
-	// printf("floor b%d\n", cube.floor_b);
+	printf("floor r%d\n", cube->floor_r);
+	printf("floor g%d\n", cube->floor_g);
+	printf("floor b%d\n", cube->floor_b);
 
-	// printf("ceiling r%d\n", cube.ceiling_r);
-	// printf("ceiling g%d\n", cube.ceiling_g);
-	// printf("ceiling b%d\n", cube.ceiling_b);
+	printf("ceiling r%d\n", cube->ceiling_r);
+	printf("ceiling g%d\n", cube->ceiling_g);
+	printf("ceiling b%d\n", cube->ceiling_b);
 
 
 	return (0);

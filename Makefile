@@ -9,6 +9,7 @@ SRCS =	main.c \
 		utils.c \
 		make_map.c \
 		my_mlx_pixel_put.c \
+		paint_ceiling_floor.c \
 		render.c
 
 %.o: %.c
