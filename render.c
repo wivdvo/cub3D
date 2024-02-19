@@ -72,7 +72,7 @@ void render(t_cube *cube)
 	cube->plane_x = 0;
 	cube->plane_y = 0.66;
 	
-	spawn_player(cube, WEST);
+	spawn_player(cube, NORTH);
 
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
@@ -123,6 +123,8 @@ int	key_release(int keysym, t_cube *cube)
         cube->right_pressed = 0;
 }
 
+float degToRad(int a) { return a*3.14/180.0;}
+int FixAng(int a){ if(a>359){ a-=360;} if(a<0){ a+=360;} return a;}
 int	game_loop(t_cube *cube)
 {
 	if (cube->w_pressed)
@@ -133,11 +135,40 @@ int	game_loop(t_cube *cube)
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
-	// if (cube->a_pressed)
-	// {
-	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-	// 	cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
-	// }
+	if (cube->a_pressed)
+	{
+
+		//rotate to left 90 degree
+		double old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(-1.5708) - cube->dir_y * sin(-1.5708);
+		cube->dir_y = old_dir_x * sin(-1.5708) + cube->dir_y * cos(-1.5708);
+
+		double old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(-1.5708) - cube->plane_y * sin(-1.5708);
+		cube->plane_y = old_plane_x * sin(-1.5708) + cube->plane_y * cos(-1.5708);
+
+		//move like with w
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+			cube->pos_x += cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y += cube->dir_y * MS;
+
+		//rotate to right 90 degree
+		old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(1.5708) - cube->dir_y * sin(1.5708);
+		cube->dir_y = old_dir_x * sin(1.5708) + cube->dir_y * cos(1.5708);
+
+		old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(1.5708) - cube->plane_y * sin(1.5708);
+		cube->plane_y = old_plane_x * sin(1.5708) + cube->plane_y * cos(1.5708);
+
+		//cube->a_pressed = 0;
+		// cube->pos_x =cos(degToRad(pa)); 
+		// cube->pos_y = -sin(degToRad(pa));
+		// cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
+		// cube->pos_y = cube->pos_y + (cube->dir_y - 1) * MS;
+		raycaster(cube);
+	}
 	if (cube->s_pressed)
 	{
 		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
@@ -146,11 +177,34 @@ int	game_loop(t_cube *cube)
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}
-	// if (cube->d_pressed)
-	// {
-	// 	cube->pos_x = cube->pos_x + (cube->dir_x - 1) * MS;
-	// 	cube->pos_y = cube->pos_y + (cube->dir_y + 1) * MS;
-	// }
+	if (cube->d_pressed)
+	{
+		//rotate to right 90 degree
+		double old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(1.5708) - cube->dir_y * sin(1.5708);
+		cube->dir_y = old_dir_x * sin(1.5708) + cube->dir_y * cos(1.5708);
+
+		double old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(1.5708) - cube->plane_y * sin(1.5708);
+		cube->plane_y = old_plane_x * sin(1.5708) + cube->plane_y * cos(1.5708);
+
+				//move like with w
+		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+			cube->pos_x += cube->dir_x * MS;
+		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+			cube->pos_y += cube->dir_y * MS;
+
+		//rotate to left 90 degree
+		old_dir_x = cube->dir_x;
+		cube->dir_x = cube->dir_x * cos(-1.5708) - cube->dir_y * sin(-1.5708);
+		cube->dir_y = old_dir_x * sin(-1.5708) + cube->dir_y * cos(-1.5708);
+
+		old_plane_x = cube->plane_x;
+		cube->plane_x = cube->plane_x * cos(-1.5708) - cube->plane_y * sin(-1.5708);
+		cube->plane_y = old_plane_x * sin(-1.5708) + cube->plane_y * cos(-1.5708);
+
+		raycaster(cube);
+	}
 
 	if (cube->left_pressed)
 	{
