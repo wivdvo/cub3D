@@ -77,7 +77,7 @@ void get_spawn_position(t_cube *cube)
 		{
 			if(is_player(map[i][j]) == 1)
 			{
-				printf("Player position is %d and %d", i, j);
+				//printf("Player position is %d and %d", i, j);
 				set_spawn_direction(map[i][j], cube);
 				cube->pos_x = i;
 				cube->pos_y = j;
