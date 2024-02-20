@@ -91,7 +91,7 @@ void render(t_cube *cube)
 
 int	key_press(int keysym, t_cube *cube)
 {
-	puts("key pressed");
+	// puts("key pressed");
 	if (keysym == XK_w)
 		cube->w_pressed = 1;
     else if (keysym == XK_s)
@@ -108,7 +108,7 @@ int	key_press(int keysym, t_cube *cube)
 
 int	key_release(int keysym, t_cube *cube)
 {
-	puts("key released");
+	//puts("key released");
 	if (keysym == XK_w)
 		cube->w_pressed = 0;
     else if (keysym == XK_s)
@@ -125,6 +125,7 @@ int	key_release(int keysym, t_cube *cube)
 
 int	game_loop(t_cube *cube)
 {
+	printf("map value is %c\n",cube->map[(int)(cube->pos_x + cube->dir_x * MS)][(int)(cube->pos_y)] );
 	if (cube->w_pressed)
 	{
 		if (cube->map[(int)(cube->pos_x + cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
@@ -305,8 +306,8 @@ void raycaster(t_cube *cube)
 	x = 0;
 
 	paint_ceiling_floor(cube);
-	printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
-	printf("dir x:%f, dir y:%f\n", cube->dir_x, cube->dir_y);
+	// printf("pos x:%f, pos y:%f\n", cube->pos_x, cube->pos_y);
+	// printf("dir x:%f, dir y:%f\n", cube->dir_x, cube->dir_y);
 
 
 	//very high number ;; meant to be infity ;; if it would be division through 0 do infinity instead

@@ -13,10 +13,10 @@
 #ifndef CUB3D_H
 # define CUB3D_H
 
-# define WIDTH 1920
-# define HEIGHT 1080
-# define MS 0.05
-# define RS 0.02
+# define WIDTH 640
+# define HEIGHT 480
+# define MS 0.002
+# define RS 0.002
 # define NORTH 1
 # define EAST 2
 # define SOUTH 3
