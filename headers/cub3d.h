@@ -39,7 +39,7 @@
 
 void render(t_cube *cube);
 int	render_exit(t_cube *cube);
-void spawn_player(t_cube *cube, int spawn_direction);
+void spawn_player(t_cube *cube);
 void	init_mlx(t_cube *cube);
 void	init_img(t_cube *cube);
 void	init_no(t_cube *cube);

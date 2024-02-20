@@ -74,6 +74,7 @@ typedef struct s_cube
 	int		d_pressed;
 	int		left_pressed;
 	int		right_pressed;
+	int		spawn_direction;
 	
 } t_cube;
 

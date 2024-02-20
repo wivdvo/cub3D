@@ -43,18 +43,64 @@ static void north(t_cube *cube)
 	cube->plane_y = 0;
 }
 
-void spawn_player(t_cube *cube, int spawn_direction)
+int is_player(char c)
 {
-	//get_spawn position
-	cube->pos_x = 2;
-	cube->pos_y = 3;
+	if (c == 'N' || c == 'E' || c == 'S' || c == 'W')
+		return (1);
+	return (0);
+}
+
+void set_spawn_direction(char c, t_cube *cube)
+{
+	if (c == 'N')
+		cube->spawn_direction = NORTH;
+	else if (c == 'E')
+		cube->spawn_direction = EAST;
+	else if (c == 'S')
+		cube->spawn_direction = SOUTH;
+	else if (c == 'W')
+		cube->spawn_direction = WEST;
+}
+
+void get_spawn_position(t_cube *cube)
+{
+	char **map;
+	map = cube->map;
+	int i;
+	i = 0;
+	int j;
+	j = 0;
+	while(map[i] != NULL)
+	{
+		j = 0;
+		while(map[i][j] != '\0')
+		{
+			if(is_player(map[i][j]) == 1)
+			{
+				printf("Player position is %d and %d", i, j);
+				set_spawn_direction(map[i][j], cube);
+				cube->pos_x = i;
+				cube->pos_y = j;
+				return ;
+			}
+			j++;
+		}
+		i++;
+	}
+}
+
+void spawn_player(t_cube *cube)
+{
+	get_spawn_position(cube);
+	//cube->pos_x = 2;
+	//cube->pos_y = 3;
 	
-	if(spawn_direction == NORTH)
+	if(cube->spawn_direction == NORTH)
 		north(cube);
-	else if(spawn_direction == EAST)
+	else if(cube->spawn_direction == EAST)
 		east(cube);
-	else if(spawn_direction == SOUTH)
+	else if(cube->spawn_direction == SOUTH)
 		south(cube);
-	else if(spawn_direction == WEST)
+	else if(cube->spawn_direction == WEST)
 		west(cube);
 }

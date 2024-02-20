@@ -72,7 +72,7 @@ void render(t_cube *cube)
 	cube->plane_x = 0;
 	cube->plane_y = 0.66;
 	
-	spawn_player(cube, NORTH);
+	spawn_player(cube);
 
 	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
@@ -400,13 +400,13 @@ void raycaster(t_cube *cube)
 		cube->draw_start = -cube->line_height / 2 + (double)HEIGHT / 2;
 		if (cube->draw_start < 0)
 		{
-			puts("start < 0");
+			//puts("start < 0");
 			cube->draw_start = 0;
 		}
 		cube->draw_end = cube->line_height / 2 + (double)HEIGHT / 2;
 		if (cube->draw_end > HEIGHT)
 		{
-			puts("end < 0");
+			//puts("end < 0");
 			cube->draw_end = HEIGHT - 1;
 		}
 		
