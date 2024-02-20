@@ -12,9 +12,9 @@
 
 #include "headers/cub3d.h"
 
-static void east(t_cube *cube)
+static void north(t_cube *cube)
 {
-	cube->dir_x = 1;
+	cube->dir_x = -1;
 	cube->dir_y = 0;
 	cube->plane_x = 0;
 	cube->plane_y = 0.66;
@@ -22,23 +22,23 @@ static void east(t_cube *cube)
 
 static void west(t_cube *cube)
 {
-	cube->dir_x = -1;
+	cube->dir_x = 0;
+	cube->dir_y = -1;
+	cube->plane_x = -0.66;
+	cube->plane_y = 0;
+}
+static void south(t_cube *cube)
+{
+	cube->dir_x = 1;
 	cube->dir_y = 0;
 	cube->plane_x = 0;
 	cube->plane_y = -0.66;
 }
-static void south(t_cube *cube)
+
+static void east(t_cube *cube)
 {
 	cube->dir_x = 0;
 	cube->dir_y = 1;
-	cube->plane_x = -0.66;
-	cube->plane_y = 0;
-}
-
-static void north(t_cube *cube)
-{
-	cube->dir_x = 0;
-	cube->dir_y = -1;
 	cube->plane_x = 0.66;
 	cube->plane_y = 0;
 }

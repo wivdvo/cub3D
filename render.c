@@ -127,9 +127,9 @@ int	game_loop(t_cube *cube)
 {
 	if (cube->w_pressed)
 	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x + cube->dir_x * MS)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_y + cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * MS)] != '1')
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
@@ -169,9 +169,9 @@ int	game_loop(t_cube *cube)
 	}
 	if (cube->s_pressed)
 	{
-		if (cube->map[(int)(cube->pos_y)][(int)(cube->pos_x - cube->dir_x * MS)] != '1')
+		if (cube->map[(int)(cube->pos_x - cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
 			cube->pos_x -= cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_y - cube->dir_y * MS)][(int)(cube->pos_x)] != '1')
+		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y - cube->dir_y * MS)] != '1')
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}
@@ -204,7 +204,7 @@ int	game_loop(t_cube *cube)
 		raycaster(cube);
 	}
 
-	if (cube->left_pressed)
+	if (cube->right_pressed)
 	{
 		double old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
@@ -215,7 +215,7 @@ int	game_loop(t_cube *cube)
 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
 		raycaster(cube);
 	}
-	if (cube->right_pressed)
+	if (cube->left_pressed)
 	{
 		double old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
@@ -315,8 +315,8 @@ void raycaster(t_cube *cube)
 
 	while (x < WIDTH)
 	{
-		//ray pos and dir
-		cube->camera_x = 2 * x / (double)WIDTH - 1;
+		//calculate ray position and direction
+		cube->camera_x = 2 * x / (double)WIDTH - 1; //x - coordinate in camera space
 		cube->ray_dir_x = cube->dir_x + cube->plane_x * cube->camera_x;
 		cube->ray_dir_y = cube->dir_y + cube->plane_y * cube->camera_x; 
 
@@ -339,7 +339,7 @@ void raycaster(t_cube *cube)
 
 
 
-		//idk man
+		//calculate step and initial sideDist
 		if (cube->ray_dir_x < 0)
 		{
 			cube->step_x = -1;
@@ -371,21 +371,21 @@ void raycaster(t_cube *cube)
 			{
 				cube->dis_to_side_x += cube->delta_x;
 				cube->map_x +=	cube->step_x;
-				cube->side = 1;
+				cube->side = 0;
 			}
 			else
 			{
 				cube->dis_to_side_y += cube->delta_y;
 				cube->map_y += cube->step_y;
-				cube->side = 2;
+				cube->side = 1;
 			}
 			//check for collison
-			if (cube->map[cube->map_y][cube->map_x] == '1')
+			if (cube->map[cube->map_x][cube->map_y] == '1')
 				cube->hit = 1;
 		}
 			
 		//claculate distance
-		if (cube->side == 1)
+		if (cube->side == 0)
 			cube->wall_dist = (cube->dis_to_side_x - cube->delta_x);
 		else
 			cube->wall_dist = (cube->dis_to_side_y - cube->delta_y);
@@ -404,7 +404,7 @@ void raycaster(t_cube *cube)
 			cube->draw_start = 0;
 		}
 		cube->draw_end = cube->line_height / 2 + (double)HEIGHT / 2;
-		if (cube->draw_end > HEIGHT)
+		if (cube->draw_end >= HEIGHT)
 		{
 			//puts("end < 0");
 			cube->draw_end = HEIGHT - 1;
