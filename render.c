@@ -339,18 +339,39 @@ void raycaster(t_cube *cube)
 			cube->draw_end = HEIGHT - 1;
 		}
 		
-			
+		int bits_per_pixel, size_line, endian;
+		char *img_data = mlx_get_data_addr(cube->no_img, &bits_per_pixel, &size_line, &endian);
+
+		// Calculate the height of the texture
+		int texture_height = size_line / (bits_per_pixel / 8);
+
+		// Calculate the step and the initial position on the texture
+		double step = 1.0 * texture_height / cube->line_height;
+		double texture_pos = (cube->draw_start - HEIGHT / 2 + cube->line_height / 2) * step;
+
+		for (int y = cube->draw_start; y < cube->draw_end; y++)
+		{
+			// Get the y coordinate on the texture
+			int texture_y = (int)texture_pos & (texture_height - 1);
+			texture_pos += step;
+
+			// Get the color of the pixel from the texture
+			int color = *(int*)(img_data + texture_y * size_line);
+
+			// Draw the pixel
+			my_mlx_pixel_put(&cube->img, x, y, color);
+		}
 		// void *slicica;
 		// int img_width;
 		// int img_height;
 
 		// slicica = mlx_xpm_file_to_image(cube->mlx_ptr, "wall.xpm", &img_width, &img_height);
 		//drawing pixels 	
-		for (int y = cube->draw_start; y < cube->draw_end; y++)
-		{
-			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
-			my_mlx_pixel_put(&cube->img, x, y, 0x00B67352);
-		}
+		// for (int y = cube->draw_start; y < cube->draw_end; y++)
+		// {
+		// 	//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
+		// 	my_mlx_pixel_put(&cube->img, x, y, 0x00B67352);
+		// }
 
 
 		// for (int y = 50; y <= 200; y++)
