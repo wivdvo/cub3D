@@ -340,7 +340,26 @@ void raycaster(t_cube *cube)
 		}
 		
 		int bits_per_pixel, size_line, endian;
-		char *img_data = mlx_get_data_addr(cube->no_img, &bits_per_pixel, &size_line, &endian);
+		char *img_data = mlx_get_data_addr(cube->we_img, &bits_per_pixel, &size_line, &endian);
+
+		// Calculate the exact position where the ray hits the wall
+		double wall_x;
+		if (cube->side == 0) // If the ray hits a wall on the x-axis
+			wall_x = cube->pos_y + cube->wall_dist * cube->ray_dir_y;
+		else // If the ray hits a wall on the y-axis
+			wall_x = cube->pos_x + cube->wall_dist * cube->ray_dir_x;
+		wall_x -= floor(wall_x);
+
+		// Now get the x texture coordinate
+		int tex_x = (int)(wall_x * (double)100);
+		if (cube->side == 0 && cube->ray_dir_x > 0)
+			tex_x = 100 - tex_x - 1;
+		if (cube->side == 1 && cube->ray_dir_y < 0)
+			tex_x = 100 - tex_x - 1;
+
+
+
+
 
 		// Calculate the height of the texture
 		int texture_height = size_line / (bits_per_pixel / 8);
@@ -352,11 +371,11 @@ void raycaster(t_cube *cube)
 		for (int y = cube->draw_start; y < cube->draw_end; y++)
 		{
 			// Get the y coordinate on the texture
-			int texture_y = (int)texture_pos & (texture_height - 1);
+			int texture_y = (int)texture_pos % texture_height;
 			texture_pos += step;
 
 			// Get the color of the pixel from the texture
-			int color = *(int*)(img_data + texture_y * size_line);
+			int color = *(int*)(img_data + texture_y * size_line + tex_x * (bits_per_pixel / 8));
 
 			// Draw the pixel
 			my_mlx_pixel_put(&cube->img, x, y, color);
