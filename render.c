@@ -130,9 +130,9 @@ int	game_loop(t_cube *cube)
 {
 	if (cube->w_pressed)
 	{
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))][(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * MS)] != '1')
+		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * (1.1))] != '1')
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
@@ -149,9 +149,9 @@ int	game_loop(t_cube *cube)
 		cube->plane_y = old_plane_x * sin(-1.5708) + cube->plane_y * cos(-1.5708);
 
 		//move like with w
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * MS)] != '1')
+		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
 
 		//rotate to left 90 degree
@@ -166,9 +166,9 @@ int	game_loop(t_cube *cube)
 	}
 	if (cube->s_pressed)
 	{
-		if (cube->map[(int)(cube->pos_x - cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
 			cube->pos_x -= cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y - cube->dir_y * MS)] != '1')
+		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y - cube->dir_y * 1.1)] != '1')
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}
@@ -185,9 +185,9 @@ int	game_loop(t_cube *cube)
 
 				//move like with w
 
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * MS)][(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * MS)] != '1')
+		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
 		//rotate to right 90 degree
 		old_dir_x = cube->dir_x;
