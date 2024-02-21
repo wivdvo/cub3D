@@ -29,18 +29,21 @@ void	init_mlx(t_cube *cube)
 void	init_img(t_cube *cube)
 {
 	init_no(cube);
+	init_ea(cube);
+	init_so(cube);
+	init_we(cube);
 }
 
 void	init_no(t_cube *cube)
 {
-	cube->no_img = mlx_xpm_file_to_image(cube->mlx_ptr, cube->so_path, &cube->wall_width, &cube->wall_height);
+	cube->no_img = mlx_xpm_file_to_image(cube->mlx_ptr, cube->no_path, &cube->wall_width, &cube->wall_height);
 	if (!cube->no_img)
 		render_exit(cube);
 }
 
 void	init_ea(t_cube *cube)
 {
-	cube->ea_img = mlx_xpm_file_to_image(cube->mlx_ptr, cube->so_path, &cube->wall_width, &cube->wall_height);
+	cube->ea_img = mlx_xpm_file_to_image(cube->mlx_ptr, cube->ea_path, &cube->wall_width, &cube->wall_height);
 	if (!cube->ea_img)
 		render_exit(cube);
 }
@@ -54,7 +57,7 @@ void	init_so(t_cube *cube)
 
 void	init_we(t_cube *cube)
 {
-	cube->we_img = mlx_xpm_file_to_image(cube->mlx_ptr, cube->so_path, &cube->wall_width, &cube->wall_height);
+	cube->we_img = mlx_xpm_file_to_image(cube->mlx_ptr, cube->we_path, &cube->wall_width, &cube->wall_height);
 	if (!cube->we_img)
 		render_exit(cube);
 }
@@ -62,15 +65,15 @@ void	init_we(t_cube *cube)
 void render(t_cube *cube)
 {
 	init_mlx(cube);
-	// init_img(cube);
+	init_img(cube);
 
 
-	cube->pos_x = 2;
-	cube->pos_y = 3;
-	cube->dir_x = 1;
-	cube->dir_y = 0;
-	cube->plane_x = 0;
-	cube->plane_y = 0.66;
+	// cube->pos_x = 2;
+	// cube->pos_y = 3;
+	// cube->dir_x = 1;
+	// cube->dir_y = 0;
+	// cube->plane_x = 0;
+	// cube->plane_y = 0.66;
 	
 	spawn_player(cube);
 
@@ -337,11 +340,18 @@ void raycaster(t_cube *cube)
 		}
 		
 			
+		// void *slicica;
+		// int img_width;
+		// int img_height;
+
+		// slicica = mlx_xpm_file_to_image(cube->mlx_ptr, "wall.xpm", &img_width, &img_height);
+		//drawing pixels 	
 		for (int y = cube->draw_start; y < cube->draw_end; y++)
 		{
 			//mlx_pixel_put(cube->mlx_ptr, cube->win_ptr, x, y, 0xFF0000);
 			my_mlx_pixel_put(&cube->img, x, y, 0x00B67352);
 		}
+
 
 		// for (int y = 50; y <= 200; y++)
 		// {
@@ -350,6 +360,14 @@ void raycaster(t_cube *cube)
 		
 		x++;
 	}
+	// void *slicica;
+	// int img_width;
+	// int img_height;
+	// slicica = mlx_xpm_file_to_image(cube->mlx_ptr, "wall.xpm", &img_width, &img_height);
 	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img,0, 0);
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->ea_img,100, 0);
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->we_img, 200, 0);
+	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->so_img, 300, 0);
 
 }

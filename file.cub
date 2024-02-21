@@ -1,7 +1,7 @@
-WE ./fseles.xpm
-SO ./fseles.xpm
-EA ./fseles.xpm
-NO ./fseles.xpm
+WE ./walls/walls_xpm/WestWall100.xpm
+SO ./walls/walls_xpm/SouthWall100.xpm
+EA ./walls/walls_xpm/EastWall100.xpm
+NO ./walls/walls_xpm/NorthWall100.xpm
 
 F 241,250,218
 C 38, 80, 115
