@@ -43,7 +43,7 @@ void	init_pars_struct(t_cube *cube)
 	cube->no_img = NULL;
 	cube->ea_img = NULL;
 	cube->we_img = NULL;
-	cube->so_img= NULL;
+	cube->so_img = NULL;
 	cube->w_pressed = 0;
 	cube->a_pressed = 0;
 	cube->s_pressed = 0;
@@ -55,8 +55,8 @@ void	init_pars_struct(t_cube *cube)
 
 int	find_map_begin(t_cube *cube)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	while (cube->file[i])
@@ -67,19 +67,18 @@ int	find_map_begin(t_cube *cube)
 			j++;
 		}
 		if (cube->file[i][j] == '1' || cube->file[i][j] == '0')
-			break;
+			break ;
 		if (cube->file[i][j] == 'N' && cube->file[i][j + 1] != 'O')
-			break;
+			break ;
 		if (cube->file[i][j] == 'E' && cube->file[i][j + 1] != 'A')
-			break;
+			break ;
 		if (cube->file[i][j] == 'S' && cube->file[i][j + 1] != 'O')
-			break;
+			break ;
 		if (cube->file[i][j] == 'W' && cube->file[i][j + 1] != 'E')
-			break;
+			break ;
 		i++;
 	}
 	cube->map_begin = i;
-	//printf("begin%s", cube->file[i]);
 }
 
 int	parsing(t_cube *cube, char *path)
@@ -92,31 +91,20 @@ int	parsing(t_cube *cube, char *path)
 	if (get_colors(cube) != 0)
 		return (-1);
 	make_map(cube);
-
-	if(is_map_cased(cube) != 1)
+	if (is_map_cased(cube) != 1)
 	{
 		printf("\nmap is not cased\n");
 		pars_exit(cube, NULL);
 	}
-	else 
+	else
 	{
 		printf("\nmap is cased\n");
 	}
-
 	printf("floor r%d\n", cube->floor_r);
 	printf("floor g%d\n", cube->floor_g);
 	printf("floor b%d\n", cube->floor_b);
-
 	printf("ceiling r%d\n", cube->ceiling_r);
 	printf("ceiling g%d\n", cube->ceiling_g);
 	printf("ceiling b%d\n", cube->ceiling_b);
-
-
 	return (0);
 }
-
-// int main()
-// {
-// 	return parsing("file.cub");
-	
-// }
