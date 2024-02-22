@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 16:15:00 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/22 15:20:52 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	init_pars_struct(t_cube *cube)
 	cube->d_pressed = 0;
 	cube->left_pressed = 0;
 	cube->right_pressed = 0;
+	cube->esc_pressed = 0;
 }
 
 int	find_map_begin(t_cube *cube)

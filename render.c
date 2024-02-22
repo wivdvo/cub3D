@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 15:08:27 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 15:21:40 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,6 @@ void	init_we(t_cube *cube)
 		render_exit(cube);
 }
 
-int	handle_input(int keysym, t_cube *cube)
-{
-	if (keysym == XK_Escape)
-		render_exit(cube);
-}
-
 void render(t_cube *cube)
 {
 	init_mlx(cube);
@@ -92,7 +86,7 @@ void render(t_cube *cube)
 	mlx_hook(cube->win_ptr, 2, (1L<<0), &key_press, cube);
     mlx_hook(cube->win_ptr, 3, (1L<<1), &key_release, cube);
 
-	mlx_key_hook(cube->win_ptr, handle_input, cube);
+	//mlx_key_hook(cube->win_ptr, handle_input, cube);
 
 
 	mlx_loop_hook(cube->mlx_ptr, &game_loop, cube);
@@ -115,6 +109,8 @@ int	key_press(int keysym, t_cube *cube)
         cube->left_pressed = 1;
     else if (keysym == XK_Right)
         cube->right_pressed = 1;
+	else if (keysym == XK_Escape)
+		cube->esc_pressed = 1;
 }
 
 int	key_release(int keysym, t_cube *cube)
@@ -136,6 +132,8 @@ int	key_release(int keysym, t_cube *cube)
 
 int	game_loop(t_cube *cube)
 {
+	if (cube->esc_pressed)
+		render_exit(cube);
 	if (cube->w_pressed)
 	{
 		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))][(int)(cube->pos_y)] != '1')
