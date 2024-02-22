@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/08 15:00:50 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 14:29:02 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,12 +127,12 @@ int	find(t_cube *cube, char *dir)
 int check_flags(t_cube *cube)
 {
 	if (cube->no_flag != 1)
-		return (put_error("north texture missing or after map"), 1);
+		return (pars_exit(cube, "north texture missing or after map"), 1);
 	if (cube->so_flag != 1)
-		return (put_error("south texture missing or after map"), 1);
+		return (pars_exit(cube, "south texture missing or after map"), 1);
 	if (cube->ea_flag != 1)
-		return (put_error("east texture missing or after map"), 1);
+		return (pars_exit(cube, "east texture missing or after map"), 1);
 	if (cube->we_flag != 1)
-		return (put_error("west texture missing or after map"), 1);
+		return (pars_exit(cube, "west texture missing or after map"), 1);
 	return (0);
 }

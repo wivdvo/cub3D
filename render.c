@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/14 16:30:14 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/22 15:08:27 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,12 @@ void	init_we(t_cube *cube)
 		render_exit(cube);
 }
 
+int	handle_input(int keysym, t_cube *cube)
+{
+	if (keysym == XK_Escape)
+		render_exit(cube);
+}
+
 void render(t_cube *cube)
 {
 	init_mlx(cube);
@@ -85,6 +91,8 @@ void render(t_cube *cube)
 
 	mlx_hook(cube->win_ptr, 2, (1L<<0), &key_press, cube);
     mlx_hook(cube->win_ptr, 3, (1L<<1), &key_release, cube);
+
+	mlx_key_hook(cube->win_ptr, handle_input, cube);
 
 
 	mlx_loop_hook(cube->mlx_ptr, &game_loop, cube);

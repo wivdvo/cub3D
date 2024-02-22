@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 11:55:53 by fseles            #+#    #+#             */
-/*   Updated: 2023/11/29 16:35:21 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 14:20:12 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,6 @@ char	*ft_free(int bytes_read, char **line);
 char	*ft_realloc(char **line, int i, int *did_malloc_fail);
 char	*make_res(char **line);
 char	*ft_read(char **line, int fd, int *bytes_read);
-char	*get_next_line(int fd);
+int		get_next_line(int fd, char **res);
 
 #endif

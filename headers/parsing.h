@@ -93,7 +93,7 @@ int	extract_info(t_cube *cube, char *line, char flag);
 int	find(t_cube *cube, char *dir);
 int check_flags(t_cube *cube);
 int	make_array(t_cube *cube, char *path);
-int	realloc_file_array(t_cube *cube, char *line, int y);
+int	realloc_file_array(t_cube *cube, char **line, int y);
 int	read_file_array(t_cube *cube, int fd);
 int	parsing(t_cube *cube, char *path);
 void	pars_exit(t_cube *cube, char *msg);

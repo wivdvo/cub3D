@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 13:57:17 by wvan-der          #+#    #+#             */
-/*   Updated: 2023/10/23 15:47:18 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 14:47:16 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,20 +105,25 @@ char	*ft_read(char **line, int fd, int *bytes_read)
 	return (free(buff), *line);
 }
 
-char	*get_next_line(int fd)
+int get_next_line(int fd, char **fin)
 {
 	static char	*line;
 	char		*res;
 	int			bytes_read;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
-		return (NULL);
+		return (-1);
 	line = ft_read(&line, fd, &bytes_read);
-	if (bytes_read == -1 || !line)
-		return (ft_free(bytes_read, &line), NULL);
+	if (bytes_read == -1)
+		return (ft_free(bytes_read, &line), -1);
+	if (!line)
+	{
+		*fin = NULL;
+		return (1);
+	}
 	res = make_res(&line);
 	if (!res)
-		return (ft_free(bytes_read, &line), NULL);
+		return (ft_free(bytes_read, &line), -1);
 	if (bytes_read == 0)
 	{
 		if (line)
@@ -126,8 +131,13 @@ char	*get_next_line(int fd)
 		line = NULL;
 	}
 	if (res && res[0] == '\0')
-		return (free(res), NULL);
-	return (res);
+	{
+		free(res);
+		*fin = NULL;
+		return (1);
+	}
+	*fin = res;
+	return (0);
 }
 /* 
 int	main()

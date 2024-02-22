@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:45:17 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/08 16:07:33 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 15:11:59 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,8 @@ int	render_exit(t_cube *cube)
 		mlx_destroy_image(cube->mlx_ptr, cube->we_img);
 	if (cube->so_img)
 		mlx_destroy_image(cube->mlx_ptr, cube->so_img);
+	if (cube->img.img)
+		mlx_destroy_image(cube->mlx_ptr, cube->img.img);
 
 
 	if (cube->win_ptr)
