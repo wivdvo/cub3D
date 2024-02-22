@@ -15,8 +15,8 @@
 
 # define WIDTH 640
 # define HEIGHT 480
-# define MS 0.002
-# define RS 0.002
+# define MS 0.006
+# define RS 0.003
 # define NORTH 1
 # define EAST 2
 # define SOUTH 3

@@ -279,7 +279,7 @@ void raycaster(t_cube *cube)
 			cube->step_x = 1;
 			cube->dis_to_side_x = (cube->map_x + 1.0 - cube->pos_x) * cube->delta_x;
 		}
-
+ 
 		if (cube->ray_dir_y < 0)
 		{
 			cube->step_y = -1;
@@ -340,7 +340,27 @@ void raycaster(t_cube *cube)
 		}
 		
 		int bits_per_pixel, size_line, endian;
-		char *img_data = mlx_get_data_addr(cube->we_img, &bits_per_pixel, &size_line, &endian);
+
+		char *img_data;
+
+
+
+		if (cube->side == 0)
+		{
+			if (cube->map_x > cube->pos_x)
+				img_data = mlx_get_data_addr(cube->so_img, &bits_per_pixel, &size_line, &endian);
+			else
+				img_data = mlx_get_data_addr(cube->no_img, &bits_per_pixel, &size_line, &endian);
+		}
+		else
+		{
+			if (cube->map_y > cube->pos_y)
+				img_data = mlx_get_data_addr(cube->ea_img, &bits_per_pixel, &size_line, &endian);
+			else
+				img_data = mlx_get_data_addr(cube->we_img, &bits_per_pixel, &size_line, &endian);
+		}
+
+		//char *img_data = mlx_get_data_addr(cube->we_img, &bits_per_pixel, &size_line, &endian);
 
 		// Calculate the exact position where the ray hits the wall
 		double wall_x;
@@ -405,9 +425,9 @@ void raycaster(t_cube *cube)
 	// int img_height;
 	// slicica = mlx_xpm_file_to_image(cube->mlx_ptr, "wall.xpm", &img_width, &img_height);
 	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
-	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img,0, 0);
-	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->ea_img,100, 0);
-	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->we_img, 200, 0);
-	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->so_img, 300, 0);
+	// mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img,0, 0);
+	// mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->ea_img,100, 0);
+	// mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->we_img, 200, 0);
+	// mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->so_img, 300, 0);
 
 }
