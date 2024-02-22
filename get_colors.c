@@ -21,12 +21,10 @@ int	get_colors(t_cube *cube)
 
 int	check_number(t_cube *cube, char *res, int *value)
 {
-	char *itoa;
+	char	*itoa;
 
 	*value = ft_atoi(res);
 	itoa = ft_itoa(*value);
-	//printf("res%s\n", res);
-	//printf("itoa%s\n", itoa);
 	if (!itoa)
 	{
 		free(res);
@@ -62,17 +60,15 @@ void	put_color_ceiling(t_cube *cube, int value, int flag)
 		cube->ceiling_b = value;
 }
 
-
-
 //flag 1 = color to extract is red
 //flag 2 = color is green
 //falg 4 = color is blue
 int	extract_color(t_cube *cube, char *line, int flag, char floor_ceiling)
 {
-	char *res;
-	int	value;
-	int i;
-	int j;
+	char	*res;
+	int		value;
+	int		i;
+	int		j;
 
 	i = cube->info_start;
 	j = 0;
@@ -98,8 +94,8 @@ int	extract_color(t_cube *cube, char *line, int flag, char floor_ceiling)
 //falg 4 = color is blue
 int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 {
-	int i;
-	int flag;
+	int	i;
+	int	flag;
 
 	i = 0;
 	flag = 1;
@@ -109,9 +105,9 @@ int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 		if (ft_isdigit(line[i]))
 		{
 			cube->info_start = i;
-			while (line[i] && line[i] != ',' && line[i] != ' ' && line[i] != '\n')
+			while (line[i] && line[i] != ','
+				&& line[i] != ' ' && line[i] != '\n')
 			{
-				//printf("c:%c\n", line[i]);
 				if (!ft_isdigit(line[i]))
 					pars_exit(cube, "1 invalid color value");
 				i++;
@@ -125,11 +121,11 @@ int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 		pars_exit(cube, "not 3 color values");
 }
 
-int find_ceiling(t_cube *cube)
+int	find_ceiling(t_cube *cube)
 {
 	int	i;
 	int	found;
-	
+
 	i = 0;
 	found = 0;
 	while (cube->file[i] && i < cube->map_begin)
@@ -137,7 +133,7 @@ int find_ceiling(t_cube *cube)
 		if (cube->file[i][0] == 'C')
 		{
 			found = 1;
-			break;
+			break ;
 		}
 		i++;
 	}
@@ -146,11 +142,11 @@ int find_ceiling(t_cube *cube)
 	set_start_end_color(cube, cube->file[i], 'C');
 }
 
-int find_floor(t_cube *cube)
+int	find_floor(t_cube *cube)
 {
 	int	i;
 	int	found;
-	
+
 	i = 0;
 	found = 0;
 	while (cube->file[i] && i < cube->map_begin)
@@ -158,12 +154,11 @@ int find_floor(t_cube *cube)
 		if (cube->file[i][0] == 'F')
 		{
 			found = 1;
-			break;
+			break ;
 		}
 		i++;
 	}
 	if (found == 0)
 		pars_exit(cube, "floor color msissing or after map");
 	set_start_end_color(cube, cube->file[i], 'F');
-
 }
