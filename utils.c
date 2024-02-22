@@ -14,7 +14,7 @@
 
 void	put_error(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	write(2, "Error\n", 6);
@@ -29,7 +29,7 @@ void	put_error(char *str)
 
 void	print_file_array(t_cube *cube)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (cube->file[i])
@@ -42,8 +42,8 @@ void	print_file_array(t_cube *cube)
 
 void	free_array(char ***array)
 {
-	char **arr;
-	int i;
+	char	**arr;
+	int		i;
 
 	i = 0;
 	arr = *array;
@@ -86,8 +86,6 @@ int	render_exit(t_cube *cube)
 		mlx_destroy_image(cube->mlx_ptr, cube->so_img);
 	if (cube->img.img)
 		mlx_destroy_image(cube->mlx_ptr, cube->img.img);
-
-
 	if (cube->win_ptr)
 		mlx_destroy_window(cube->mlx_ptr, cube->win_ptr);
 	if (cube->mlx_ptr)
