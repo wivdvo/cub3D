@@ -15,6 +15,7 @@
 
 # define WIDTH 640
 # define HEIGHT 480
+# define IMG_SIZE 100
 # define MS 0.006
 # define RS 0.003
 # define NORTH 1

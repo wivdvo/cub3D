@@ -371,11 +371,11 @@ void raycaster(t_cube *cube)
 		wall_x -= floor(wall_x);
 
 		// Now get the x texture coordinate
-		int tex_x = (int)(wall_x * (double)100);
+		int tex_x = (int)(wall_x * (double)IMG_SIZE);
 		if (cube->side == 0 && cube->ray_dir_x > 0)
-			tex_x = 100 - tex_x - 1;
+			tex_x = IMG_SIZE - tex_x - 1;
 		if (cube->side == 1 && cube->ray_dir_y < 0)
-			tex_x = 100 - tex_x - 1;
+			tex_x = IMG_SIZE - tex_x - 1;
 
 
 
