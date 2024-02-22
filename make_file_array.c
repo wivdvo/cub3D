@@ -26,8 +26,8 @@ int	make_array(t_cube *cube, char *path)
 
 int	realloc_file_array(t_cube *cube, char **line, int y)
 {
-	char **temp;
-	int	i;
+	char	**temp;
+	int		i;
 
 	i = 0;
 	temp = (char **)malloc(sizeof(char *) * (y + 3));
@@ -51,9 +51,9 @@ int	realloc_file_array(t_cube *cube, char **line, int y)
 
 int	read_file_array(t_cube *cube, int fd)
 {
-	int	y;
-	char *line;
-	int	ret;
+	int		y;
+	char	*line;
+	int		ret;
 
 	y = 0;
 	line = NULL;
@@ -65,7 +65,7 @@ int	read_file_array(t_cube *cube, int fd)
 	{
 		ret = get_next_line(fd, &line);
 		if (ret == 1)
-			break;
+			break ;
 		if (ret == -1)
 			pars_exit(cube, "gnl failed");
 		if (realloc_file_array(cube, &line, y) == -1)
