@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 11:55:53 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/22 14:20:12 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 15:44:58 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 11
+#  define BUFFER_SIZE 1
 # endif
 
 # include <fcntl.h>

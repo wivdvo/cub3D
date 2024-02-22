@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 15:21:40 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 16:16:13 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,17 @@ void	init_mlx(t_cube *cube)
 		pars_exit(cube, "mlx init failed");
 	cube->win_ptr = mlx_new_window(cube->mlx_ptr, WIDTH, HEIGHT, "*****");
 	if (!cube->win_ptr)
+	{
+		mlx_destroy_display(cube->mlx_ptr);
+		free(cube->mlx_ptr);
 		pars_exit(cube, "mlx new window failed");
+	}
 	cube->img.img = mlx_new_image(cube->mlx_ptr, WIDTH, HEIGHT);
+	if (!cube->img.img)
+		render_exit(cube);
 	cube->img.addr = mlx_get_data_addr(cube->img.img, &cube->img.bits_per_pixel, &cube->img.line_length, &cube->img.endian);
+	if (!cube->img.img)
+		render_exit(cube);
 	my_mlx_pixel_put(&cube->img, 5, 5, 0x00FF0000);
 	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img,0, 0);
 }
@@ -365,6 +373,8 @@ void raycaster(t_cube *cube)
 			else
 				img_data = mlx_get_data_addr(cube->we_img, &bits_per_pixel, &size_line, &endian);
 		}
+		if (!img_data)
+			render_exit(cube);
 
 		//char *img_data = mlx_get_data_addr(cube->we_img, &bits_per_pixel, &size_line, &endian);
 

@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 15:05:43 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/22 16:13:40 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int	make_array(t_cube *cube, char *path)
 
 	fd = open(path, O_RDWR);
 	if (fd < 0)
-		return (put_error("open failed"), -1);
+		return (pars_exit(cube, "open failed"), -1);
 	if (read_file_array(cube, fd) == -1)
-		return (put_error("reading map failed"), -1);
+		return (pars_exit(cube, "reading map failed"), -1);
 	return (0);
 }
 
@@ -31,7 +31,6 @@ int	realloc_file_array(t_cube *cube, char **line, int y)
 
 	i = 0;
 	temp = (char **)malloc(sizeof(char *) * (y + 3));
-	//temp = NULL;
 	if (!temp)
 	{
 		free(*line);
