@@ -17,7 +17,7 @@ int	make_map(t_cube *cube)
 	make_map_array(cube);
 }
 
-int make_map_array(t_cube *cube)
+int	make_map_array(t_cube *cube)
 {
 	find_map_end(cube);
 	check_that_nothing_after_end(cube);
@@ -28,8 +28,8 @@ int make_map_array(t_cube *cube)
 
 void	check_invalid_char(t_cube *cube)
 {
-	int x;
-	int y;
+	int	x;
+	int	y;
 	int	flag;
 
 	y = 0;
@@ -54,7 +54,6 @@ void	check_invalid_char(t_cube *cube)
 				else
 					pars_exit(cube, "multible player");
 			}
-
 			x++;
 		}
 		y++;
@@ -63,14 +62,15 @@ void	check_invalid_char(t_cube *cube)
 
 void	check_that_nothing_after_end(t_cube *cube)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = cube->map_end + 1;
 	while (cube->file[i])
 	{
 		j = 0;
-		while (cube->file[i][j] && (cube->file[i][j] == ' ' || cube->file[i][j] == '\n'))
+		while (cube->file[i][j] && (cube->file[i][j] == ' '
+			|| cube->file[i][j] == '\n'))
 			j++;
 		if (cube->file[i][j] != 0)
 			pars_exit(cube, "there is something after map");
@@ -78,10 +78,10 @@ void	check_that_nothing_after_end(t_cube *cube)
 	}
 }
 
-int find_map_end(t_cube *cube)
+int	find_map_end(t_cube *cube)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = cube->map_begin;
 	while (cube->file[i])
@@ -92,16 +92,15 @@ int find_map_end(t_cube *cube)
 		if (cube->file[i][j] != '1' && cube->file[i][j] != '0'
 				&& cube->file[i][j] != 'N' && cube->file[i][j] != 'E'
 				&& cube->file[i][j] != 'S' && cube->file[i][j] != 'W')
-			break;
+			break ;
 		i++;
 	}
 	cube->map_end = --i;
-	//printf("end%s", cube->file[cube->map_end]);
 }
 
 void	print_map(t_cube *cube)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	printf("----------------\n");
@@ -113,15 +112,15 @@ void	print_map(t_cube *cube)
 	printf("----------------\n");
 }
 
-int copy_map(t_cube *cube)
+int	copy_map(t_cube *cube)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	j = 0;
 	i = cube->map_begin;
-	cube->map = (char **)malloc(sizeof(char *) *
-			(cube->map_end - cube->map_begin + 2));
+	cube->map = (char **)malloc(sizeof(char *)
+			* (cube->map_end - cube->map_begin + 2));
 	if (!cube->map)
 		pars_exit(cube, "malloc failed");
 	while (cube->file[i] && i <= cube->map_end)
