@@ -87,13 +87,13 @@ int	extract_color(t_cube *cube, char *line, int flag, char floor_ceiling)
 		put_color_floor(cube, value, flag);
 	if (floor_ceiling == 'C')
 		put_color_ceiling(cube, value, flag);
-	return(0);
+	return (0);
 }
 
 //flag 1 = color to extract is red
 //flag 2 = color is green
 //falg 4 = color is blue
-int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
+void	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 {
 	int	i;
 	int	flag;
@@ -120,7 +120,6 @@ int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 	}
 	if (flag != 4)
 		pars_exit(cube, "not 3 color values");
-	return (0);
 }
 
 int	find_ceiling(t_cube *cube)

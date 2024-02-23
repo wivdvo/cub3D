@@ -15,7 +15,7 @@
 int	make_map(t_cube *cube)
 {
 	make_map_array(cube);
-	return(0);
+	return (0);
 }
 
 int	make_map_array(t_cube *cube)
