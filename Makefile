@@ -1,5 +1,8 @@
 NAME = cub3D
 
+HEADERS = headers/cub3d.h \
+		headers/parsing.h 
+
 SRCS =	main.c \
 		cased_map_utils.c \
 		cased_map.c \
@@ -25,7 +28,8 @@ SRCS =	main.c \
 
 OBJS = $(SRCS:.c=.o)
 
-
+%.o: %.c $(HEADERS)
+	$(CC) -g $(COMPILER_FLAGS) -c $< -o $@
 
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
@@ -34,7 +38,7 @@ LIBFLAGS =	-lmlx -lXext -lX11 -lm
 
 all: $(NAME)
 
-$(NAME):	$(OBJS)
+$(NAME):	$(OBJS) $(HEADERS)
 			cd libft && $(MAKE) && $(MAKE) bonus
 			$(CC) $(OBJS) -g libft/libft.a $(LIBFLAGS) -o $(NAME)
 
