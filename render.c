@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 16:16:13 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/23 12:14:49 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,29 +74,11 @@ void render(t_cube *cube)
 {
 	init_mlx(cube);
 	init_img(cube);
-
-
-	// cube->pos_x = 2;
-	// cube->pos_y = 3;
-	// cube->dir_x = 1;
-	// cube->dir_y = 0;
-	// cube->plane_x = 0;
-	// cube->plane_y = 0.66;
-	
 	spawn_player(cube);
-
-	//mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->no_img, 0, 0);
 	raycaster(cube);
-	//mlx_key_hook(cube->win_ptr, handle_input, cube);
-
 	mlx_hook(cube->win_ptr, 17, 0L, render_exit, cube);
-
 	mlx_hook(cube->win_ptr, 2, (1L<<0), &key_press, cube);
     mlx_hook(cube->win_ptr, 3, (1L<<1), &key_release, cube);
-
-	//mlx_key_hook(cube->win_ptr, handle_input, cube);
-
-
 	mlx_loop_hook(cube->mlx_ptr, &game_loop, cube);
 	mlx_loop(cube->mlx_ptr);
 }
@@ -104,7 +86,6 @@ void render(t_cube *cube)
 
 int	key_press(int keysym, t_cube *cube)
 {
-	// puts("key pressed");
 	if (keysym == XK_w)
 		cube->w_pressed = 1;
     else if (keysym == XK_s)
@@ -123,7 +104,6 @@ int	key_press(int keysym, t_cube *cube)
 
 int	key_release(int keysym, t_cube *cube)
 {
-	//puts("key released");
 	if (keysym == XK_w)
 		cube->w_pressed = 0;
     else if (keysym == XK_s)
@@ -138,10 +118,8 @@ int	key_release(int keysym, t_cube *cube)
         cube->right_pressed = 0;
 }
 
-int	game_loop(t_cube *cube)
+void	check_w_pressed(t_cube *cube)
 {
-	if (cube->esc_pressed)
-		render_exit(cube);
 	if (cube->w_pressed)
 	{
 		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))][(int)(cube->pos_y)] != '1')
@@ -150,34 +128,36 @@ int	game_loop(t_cube *cube)
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
+}
+
+void	check_d_pressed(t_cube *cube)
+{
+	double	old_dir_x;
+	double	old_plane_x;
+
 	if (cube->d_pressed)
 	{
-
-		//rotate to right 90 degree
-		double old_dir_x = cube->dir_x;
+		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-1.5708) - cube->dir_y * sin(-1.5708);
 		cube->dir_y = old_dir_x * sin(-1.5708) + cube->dir_y * cos(-1.5708);
-
-		double old_plane_x = cube->plane_x;
+		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-1.5708) - cube->plane_y * sin(-1.5708);
 		cube->plane_y = old_plane_x * sin(-1.5708) + cube->plane_y * cos(-1.5708);
-
-		//move like with w
 		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
-
-		//rotate to left 90 degree
 		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(1.5708) - cube->dir_y * sin(1.5708);
 		cube->dir_y = old_dir_x * sin(1.5708) + cube->dir_y * cos(1.5708);
-
 		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(1.5708) - cube->plane_y * sin(1.5708);
 		cube->plane_y = old_plane_x * sin(1.5708) + cube->plane_y * cos(1.5708);
 		raycaster(cube);
 	}
+}
+void	check_s_pressed(t_cube *cube)
+{
 	if (cube->s_pressed)
 	{
 		if (cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
@@ -186,57 +166,81 @@ int	game_loop(t_cube *cube)
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}
+}
+
+void	check_a_pressed(t_cube *cube)
+{
+	double	old_dir_x;
+	double	old_plane_x;
+
 	if (cube->a_pressed)
 	{
-		//rotate to left 90 degree
-		double old_dir_x = cube->dir_x;
+		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(1.5708) - cube->dir_y * sin(1.5708);
 		cube->dir_y = old_dir_x * sin(1.5708) + cube->dir_y * cos(1.5708);
-
-		double old_plane_x = cube->plane_x;
+		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(1.5708) - cube->plane_y * sin(1.5708);
 		cube->plane_y = old_plane_x * sin(1.5708) + cube->plane_y * cos(1.5708);
-
-				//move like with w
-
 		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
-		//rotate to right 90 degree
 		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-1.5708) - cube->dir_y * sin(-1.5708);
 		cube->dir_y = old_dir_x * sin(-1.5708) + cube->dir_y * cos(-1.5708);
-
 		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-1.5708) - cube->plane_y * sin(-1.5708);
 		cube->plane_y = old_plane_x * sin(-1.5708) + cube->plane_y * cos(-1.5708);
-
 		raycaster(cube);
 	}
+}
+
+void	check_right_pressed(t_cube *cube)
+{
+	double	old_dir_x;
+	double	old_plane_x;
 
 	if (cube->right_pressed)
 	{
-		double old_dir_x = cube->dir_x;
+		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-RS) - cube->dir_y * sin(-RS);
 		cube->dir_y = old_dir_x * sin(-RS) + cube->dir_y * cos(-RS);
 
-		double old_plane_x = cube->plane_x;
+		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-RS) - cube->plane_y * sin(-RS);
 		cube->plane_y = old_plane_x * sin(-RS) + cube->plane_y * cos(-RS);
 		raycaster(cube);
 	}
+}
+
+void	check_left_pressed(t_cube *cube)
+{
+	double	old_dir_x;
+	double	old_plane_x;
+
 	if (cube->left_pressed)
 	{
-		double old_dir_x = cube->dir_x;
+		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(RS) - cube->dir_y * sin(RS);
 		cube->dir_y = old_dir_x * sin(RS) + cube->dir_y * cos(RS);
 
-		double old_plane_x = cube->plane_x;
+		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(RS) - cube->plane_y * sin(RS);
 		cube->plane_y = old_plane_x * sin(RS) + cube->plane_y * cos(RS);
 		raycaster(cube);
 	}
+}
+
+int	game_loop(t_cube *cube)
+{
+	if (cube->esc_pressed)
+		render_exit(cube);
+	check_w_pressed(cube);
+	check_d_pressed(cube);
+	check_s_pressed(cube);
+	check_a_pressed(cube);
+	check_right_pressed(cube);
+	check_left_pressed(cube);
 }
 
 
