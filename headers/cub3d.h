@@ -38,12 +38,17 @@
 # include "parsing.h"
 
 
+void	clac_ray_delta(t_cube *cube);
+void	calc_ray_pos_dir(t_cube *cube, int x);
+void	calc_step_and_side_dist(t_cube *cube);
+void	check_gridlines_collision(t_cube *cube);
 void	check_d_pressed(t_cube *cube);
 void	check_s_pressed(t_cube *cube);
 void	check_w_pressed(t_cube *cube);
 void	get_spawn_position(t_cube *cube);
 void	render(t_cube *cube);
 int		render_exit(t_cube *cube);
+void	round_pos_to_int(t_cube *cube);
 void	spawn_player(t_cube *cube);
 void	init_mlx(t_cube *cube);
 void	init_img(t_cube *cube);
