@@ -87,6 +87,7 @@ int	extract_color(t_cube *cube, char *line, int flag, char floor_ceiling)
 		put_color_floor(cube, value, flag);
 	if (floor_ceiling == 'C')
 		put_color_ceiling(cube, value, flag);
+	return(0);
 }
 
 //flag 1 = color to extract is red
@@ -109,7 +110,7 @@ int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 				&& line[i] != ' ' && line[i] != '\n')
 			{
 				if (!ft_isdigit(line[i]))
-					pars_exit(cube, "1 invalid color value");
+					pars_exit(cube, "invalid color value");
 				i++;
 			}
 			cube->info_end = i;
@@ -119,6 +120,7 @@ int	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 	}
 	if (flag != 4)
 		pars_exit(cube, "not 3 color values");
+	return (0);
 }
 
 int	find_ceiling(t_cube *cube)
@@ -140,6 +142,7 @@ int	find_ceiling(t_cube *cube)
 	if (found == 0)
 		pars_exit(cube, "ceiling color msissing or after map");
 	set_start_end_color(cube, cube->file[i], 'C');
+	return (0);
 }
 
 int	find_floor(t_cube *cube)
@@ -161,4 +164,5 @@ int	find_floor(t_cube *cube)
 	if (found == 0)
 		pars_exit(cube, "floor color msissing or after map");
 	set_start_end_color(cube, cube->file[i], 'F');
+	return (0);
 }

@@ -102,6 +102,7 @@ int	find_map_end(t_cube *cube)
 		i++;
 	}
 	cube->map_end = --i;
+	return (0);
 }
 
 void	print_map(t_cube *cube)
@@ -139,4 +140,5 @@ int	copy_map(t_cube *cube)
 		i++;
 	}
 	print_map(cube);
+	return (0);
 }

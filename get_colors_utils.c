@@ -34,10 +34,11 @@ int	check_number(t_cube *cube, char *res, int *value)
 	{
 		free(res);
 		free(itoa);
-		pars_exit(cube, "2 invalid color value");
+		pars_exit(cube, "invalid color value");
 	}
 	free(res);
 	free(itoa);
+	return (0);
 }
 
 void	put_color_floor(t_cube *cube, int value, int flag)

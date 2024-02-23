@@ -28,6 +28,7 @@ int	key_press(int keysym, t_cube *cube)
 		cube->right_pressed = 1;
 	else if (keysym == XK_Escape)
 		cube->esc_pressed = 1;
+	return (0);
 }
 
 int	key_release(int keysym, t_cube *cube)
@@ -44,6 +45,7 @@ int	key_release(int keysym, t_cube *cube)
 		cube->left_pressed = 0;
 	else if (keysym == XK_Right)
 		cube->right_pressed = 0;
+	return (0);
 }
 
 void	check_w_pressed(t_cube *cube)

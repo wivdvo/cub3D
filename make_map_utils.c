@@ -15,6 +15,7 @@
 int	make_map(t_cube *cube)
 {
 	make_map_array(cube);
+	return(0);
 }
 
 int	make_map_array(t_cube *cube)
@@ -23,6 +24,7 @@ int	make_map_array(t_cube *cube)
 	check_that_nothing_after_end(cube);
 	copy_map(cube);
 	check_invalid_char(cube);
+	return (0);
 }
 
 static int	is_valid_char2(char c)

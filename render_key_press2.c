@@ -85,4 +85,5 @@ int	game_loop(t_cube *cube)
 	check_a_pressed(cube);
 	check_right_pressed(cube);
 	check_left_pressed(cube);
+	return (0);
 }

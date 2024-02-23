@@ -84,6 +84,7 @@ int	find_map_begin(t_cube *cube)
 		i++;
 	}
 	cube->map_begin = i;
+	return (0);
 }
 
 int	parsing(t_cube *cube, char *path)
