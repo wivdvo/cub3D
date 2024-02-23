@@ -12,7 +12,7 @@
 
 #include "headers/cub3d.h"
 
-static void	pointers_and_keys_init (t_cube *cube)
+static void	pointers_and_keys_init(t_cube *cube)
 {
 	cube->mlx_ptr = NULL;
 	cube->win_ptr = NULL;
