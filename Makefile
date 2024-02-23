@@ -10,6 +10,7 @@ SRCS =	main.c \
 		get_colors_utils.c \
 		make_file_array.c \
 		utils.c \
+		make_map_utils.c \
 		make_map.c \
 		my_mlx_pixel_put.c \
 		paint_ceiling_floor.c \
