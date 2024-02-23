@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 17:53:14 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/22 17:53:24 by fseles           ###   ########.fr       */
+/*   Updated: 2024/02/23 12:49:37 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,12 @@ typedef struct s_cube
 	int		right_pressed;
 	int		spawn_direction;
 	int		esc_pressed;
+	int		bits_per_pixel;
+	int		size_line;
+	int		endian;
+	char	*img_data;
+	int		tex_x;
+	double	step;
 }	t_cube;
 
 void	print_map(t_cube *cube);
