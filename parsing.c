@@ -12,6 +12,23 @@
 
 #include "headers/cub3d.h"
 
+static void	pointers_and_keys_init (t_cube *cube)
+{
+	cube->mlx_ptr = NULL;
+	cube->win_ptr = NULL;
+	cube->no_img = NULL;
+	cube->ea_img = NULL;
+	cube->we_img = NULL;
+	cube->so_img = NULL;
+	cube->w_pressed = 0;
+	cube->a_pressed = 0;
+	cube->s_pressed = 0;
+	cube->d_pressed = 0;
+	cube->left_pressed = 0;
+	cube->right_pressed = 0;
+	cube->esc_pressed = 0;
+}
+
 void	init_pars_struct(t_cube *cube)
 {
 	cube->file = NULL;
@@ -38,19 +55,7 @@ void	init_pars_struct(t_cube *cube)
 	cube->map_end = 0;
 	cube->x = 0;
 	cube->y = 0;
-	cube->mlx_ptr = NULL;
-	cube->win_ptr = NULL;
-	cube->no_img = NULL;
-	cube->ea_img = NULL;
-	cube->we_img = NULL;
-	cube->so_img = NULL;
-	cube->w_pressed = 0;
-	cube->a_pressed = 0;
-	cube->s_pressed = 0;
-	cube->d_pressed = 0;
-	cube->left_pressed = 0;
-	cube->right_pressed = 0;
-	cube->esc_pressed = 0;
+	pointers_and_keys_init(cube);
 }
 
 int	find_map_begin(t_cube *cube)
