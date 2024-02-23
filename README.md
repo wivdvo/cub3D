@@ -1,6 +1,6 @@
 # cub3D
 
-42 school patner project for which we created a oldschool 3D raycasting game.
+42 school partner project for which we created a oldschool 3D raycasting game.
 
 ## Installation
 git clone git@github.com:wivdvo/cube3d.git cub3D  
