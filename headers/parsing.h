@@ -97,18 +97,28 @@ typedef struct s_cube
 	double	step;
 }	t_cube;
 
+int		all_direction_checker(char dot, int xd, int yd, char **map);
+int		check_number(t_cube *cube, char *res, int *value);
+int		find_ceiling(t_cube *cube);
+int		find_floor(t_cube *cube);
+void	put_color_ceiling(t_cube *cube, int value, int flag);
+void	put_color_floor(t_cube *cube, int value, int flag);
 void	print_map(t_cube *cube);
 int		is_map_cased(t_cube *cube);
+int		is_end_map_char(char c);
+int		is_valid_char(char c);
 void	put_error(char *str);
 void	print_file_array(t_cube *cube);
 void	init_pars_struct(t_cube *cube);
 int		get_textures(t_cube *cube);
+int		get_map_rows(char **map);
 int		set_start_end(t_cube *cube, char *line);
 void	reset_start_end(t_cube *cube);
 int		extract_info(t_cube *cube, char *line, char flag);
 int		find(t_cube *cube, char *dir);
 int		check_flags(t_cube *cube);
 int		make_array(t_cube *cube, char *path);
+int		need_check(char c);
 int		realloc_file_array(t_cube *cube, char **line, int y);
 int		read_file_array(t_cube *cube, int fd);
 int		parsing(t_cube *cube, char *path);
