@@ -5,7 +5,7 @@
 ## Installation
 git clone git@github.com:wivdvo/cube3d.git cub3D  
 cd cub3D  
-Make  
+make  
 
 ## Usage
 Run with ./cub3D.  
