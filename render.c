@@ -35,7 +35,7 @@ void	init_mlx(t_cube *cube)
 	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img, 0, 0);
 }
 
-void render(t_cube *cube)
+void	render(t_cube *cube)
 {
 	init_mlx(cube);
 	init_img(cube);
@@ -64,13 +64,14 @@ void	calc_tex_height_step_tex_pos_and_draw(t_cube *cube, int x)
 	{
 		texture_y = (int)texture_pos % texture_height;
 		texture_pos += cube->step;
-		color = *(int*)(cube->img_data + texture_y * cube->size_line + cube->tex_x * (cube->bits_per_pixel / 8));
+		color = *(int *)(cube->img_data + texture_y * cube->size_line
+				+ cube->tex_x * (cube->bits_per_pixel / 8));
 		my_mlx_pixel_put(&cube->img, x, y, color);
 		y++;
 	}
 }
 
-void raycaster(t_cube *cube)
+void	raycaster(t_cube *cube)
 {
 	int	x;
 

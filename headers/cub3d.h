@@ -37,7 +37,6 @@
 # include "../libft/libft.h"
 # include "parsing.h"
 
-
 void	calc_distance_hit_and_height(t_cube *cube);
 void	calc_top_and_bottom(t_cube *cube);
 void	clac_ray_delta(t_cube *cube);
