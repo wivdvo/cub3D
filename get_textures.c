@@ -63,11 +63,11 @@ int	set_start_end(t_cube *cube, char *line)
 	return (0);
 }
 
-void	reset_start_end(t_cube *cube)
-{
-	cube->info_end = 0;
-	cube->info_start = 0;
-}
+// void	reset_start_end(t_cube *cube)
+// {
+// 	cube->info_end = 0;
+// 	cube->info_start = 0;
+// }
 
 int	extract_info(t_cube *cube, char *line, char flag)
 {

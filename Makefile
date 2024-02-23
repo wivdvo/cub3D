@@ -4,6 +4,7 @@ SRCS =	main.c \
 		cased_map_utils.c \
 		cased_map.c \
 		parsing.c \
+		get_textures_utils.c \
 		get_textures.c \
 		get_colors.c \
 		get_colors_utils.c \
