@@ -17,7 +17,8 @@ void	init_mlx(t_cube *cube)
 	cube->mlx_ptr = mlx_init();
 	if (!cube->mlx_ptr)
 		pars_exit(cube, "mlx init failed");
-	cube->win_ptr = mlx_new_window(cube->mlx_ptr, WIDTH, HEIGHT, "*****");
+	cube->win_ptr = mlx_new_window(cube->mlx_ptr, WIDTH, HEIGHT,
+			"Koraljka   POV");
 	if (!cube->win_ptr)
 	{
 		mlx_destroy_display(cube->mlx_ptr);

@@ -71,6 +71,5 @@ int	read_file_array(t_cube *cube, int fd)
 		y++;
 	}
 	free(line);
-	print_file_array(cube);
 	return (0);
 }

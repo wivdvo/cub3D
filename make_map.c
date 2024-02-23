@@ -139,6 +139,5 @@ int	copy_map(t_cube *cube)
 		j++;
 		i++;
 	}
-	print_map(cube);
 	return (0);
 }
