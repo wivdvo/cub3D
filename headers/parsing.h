@@ -95,6 +95,7 @@ typedef struct s_cube
 	char	*img_data;
 	int		tex_x;
 	double	step;
+	int		fd;
 }	t_cube;
 
 int		all_direction_checker(char dot, int xd, int yd, char **map);

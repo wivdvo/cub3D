@@ -14,12 +14,10 @@
 
 int	make_array(t_cube *cube, char *path)
 {
-	int	fd;
-
-	fd = open(path, O_RDWR);
-	if (fd < 0)
+	cube->fd = open(path, O_RDWR);
+	if (cube->fd < 0)
 		return (pars_exit(cube, "open failed"), -1);
-	if (read_file_array(cube, fd) == -1)
+	if (read_file_array(cube, cube->fd) == -1)
 		return (pars_exit(cube, "reading map failed"), -1);
 	return (0);
 }

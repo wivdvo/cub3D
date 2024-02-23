@@ -71,6 +71,7 @@ void	pars_exit(t_cube *cube, char *msg)
 		free(cube->ea_path);
 	if (cube->so_path)
 		free(cube->so_path);
+	close(cube->fd);
 	exit(1);
 }
 
