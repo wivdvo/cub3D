@@ -88,6 +88,7 @@ void	check_d_pressed(t_cube *cube)
 		raycaster(cube);
 	}
 }
+
 void	check_s_pressed(t_cube *cube)
 {
 	if (cube->s_pressed)

@@ -16,6 +16,7 @@ SRCS =	main.c \
 		paint_ceiling_floor.c \
 		render_init_img.c \
 		render_key_press.c \
+		render_key_press2.c \
 		render.c \
 		spawn_utils.c \
 		spawn.c
