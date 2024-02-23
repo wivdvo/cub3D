@@ -98,6 +98,7 @@ typedef struct s_cube
 }	t_cube;
 
 int		all_direction_checker(char dot, int xd, int yd, char **map);
+int		copy_map(t_cube *cube);
 int		check_number(t_cube *cube, char *res, int *value);
 int		find_ceiling(t_cube *cube);
 int		find_floor(t_cube *cube);

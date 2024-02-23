@@ -37,6 +37,11 @@
 # include "../libft/libft.h"
 # include "parsing.h"
 
+
+void	check_d_pressed(t_cube *cube);
+void	check_s_pressed(t_cube *cube);
+void	check_w_pressed(t_cube *cube);
+void	get_spawn_position(t_cube *cube);
 void	render(t_cube *cube);
 int		render_exit(t_cube *cube);
 void	spawn_player(t_cube *cube);
