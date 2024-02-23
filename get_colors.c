@@ -107,7 +107,7 @@ void	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 		{
 			cube->info_start = i;
 			while (line[i] && line[i] != ','
-				&& line[i] != ' ' && line[i] != '\n')
+				&& line[i] != ' ' && line[i] != '-' && line[i] != '\n')
 			{
 				if (!ft_isdigit(line[i]))
 					pars_exit(cube, "invalid color value");
