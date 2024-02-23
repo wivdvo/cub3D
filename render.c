@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/23 13:05:06 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/23 13:43:39 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,21 +144,23 @@ void	check_d_pressed(t_cube *cube)
 	if (cube->d_pressed)
 	{
 		old_dir_x = cube->dir_x;
-		cube->dir_x = cube->dir_x * cos(-1.5708) - cube->dir_y * sin(-1.5708);
-		cube->dir_y = old_dir_x * sin(-1.5708) + cube->dir_y * cos(-1.5708);
+		cube->dir_x = cube->dir_x * cos(-N) - cube->dir_y * sin(-N);
+		cube->dir_y = old_dir_x * sin(-N) + cube->dir_y * cos(-N);
 		old_plane_x = cube->plane_x;
-		cube->plane_x = cube->plane_x * cos(-1.5708) - cube->plane_y * sin(-1.5708);
-		cube->plane_y = old_plane_x * sin(-1.5708) + cube->plane_y * cos(-1.5708);
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)][(int)(cube->pos_y)] != '1')
+		cube->plane_x = cube->plane_x * cos(-N) - cube->plane_y * sin(-N);
+		cube->plane_y = old_plane_x * sin(-N) + cube->plane_y * cos(-N);
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+				[(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)][(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
+		if (cube->map[(int)(cube->pos_x)]
+				[(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
 		old_dir_x = cube->dir_x;
-		cube->dir_x = cube->dir_x * cos(1.5708) - cube->dir_y * sin(1.5708);
-		cube->dir_y = old_dir_x * sin(1.5708) + cube->dir_y * cos(1.5708);
+		cube->dir_x = cube->dir_x * cos(N) - cube->dir_y * sin(N);
+		cube->dir_y = old_dir_x * sin(N) + cube->dir_y * cos(N);
 		old_plane_x = cube->plane_x;
-		cube->plane_x = cube->plane_x * cos(1.5708) - cube->plane_y * sin(1.5708);
-		cube->plane_y = old_plane_x * sin(1.5708) + cube->plane_y * cos(1.5708);
+		cube->plane_x = cube->plane_x * cos(N) - cube->plane_y * sin(N);
+		cube->plane_y = old_plane_x * sin(N) + cube->plane_y * cos(N);
 		raycaster(cube);
 	}
 }
