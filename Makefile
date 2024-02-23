@@ -28,8 +28,8 @@ OBJS = $(SRCS:.c=.o)
 
 
 CC = cc
-#CFLAGS = -Wall -Werror -Wextra
-CFLAGS = -g
+CFLAGS = -Wall -Werror -Wextra
+#CFLAGS = -g
 LIBFLAGS =	-lmlx -lXext -lX11 -lm
 
 all: $(NAME)

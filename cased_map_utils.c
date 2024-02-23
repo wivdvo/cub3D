@@ -21,9 +21,10 @@ int	right_check(char dot, int row, int column, char **map)
 	int	map_column;
 	int	wall;
 
+	(void) dot;
 	map_row = row;
 	map_column = column;
-	if (ft_strlen1(map[map_row]) - 1 <= column)
+	if (ft_strlen1(map[map_row]) - 1 <= (unsigned long) column)
 		return (0);
 	map_column ++;
 	wall = 0;
@@ -47,6 +48,7 @@ int	left_check(char dot, int row, int column, char **map)
 	int	map_column;
 	int	wall;
 
+	(void) dot;
 	map_row = row;
 	if (column == 0)
 		return (0);
@@ -70,6 +72,7 @@ int	down_check(char dot, int row, int column, char **map)
 	int	map_row;
 	int	map_column;
 
+	(void) dot;
 	map_column = column;
 	last_row = get_map_rows(map);
 	if (row == last_row - 1)
@@ -78,7 +81,7 @@ int	down_check(char dot, int row, int column, char **map)
 	wall = 0;
 	while (map_row < last_row && wall == 0)
 	{
-		if (ft_strlen1(map[map_row]) - 1 <= column)
+		if (ft_strlen1(map[map_row]) - 1 <= (unsigned long) column)
 			return (0);
 		if (is_end_map_char(map[map_row][map_column]) == 1)
 			return (0);
@@ -95,6 +98,7 @@ int	up_check(char dot, int row, int column, char **map)
 	int	map_row;
 	int	map_column;
 
+	(void) dot;
 	map_column = column;
 	wall = 0;
 	if (row == 0)
@@ -102,7 +106,7 @@ int	up_check(char dot, int row, int column, char **map)
 	map_row = row - 1;
 	while (map_row != -1 && wall == 0)
 	{
-		if (ft_strlen1(map[map_row]) - 1 <= column)
+		if (ft_strlen1(map[map_row]) - 1 <= (unsigned long) column)
 			return (0);
 		if (is_end_map_char(map[map_row][map_column]) == 1)
 			return (0);
