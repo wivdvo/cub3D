@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 13:57:17 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 16:14:57 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/23 15:09:11 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ char	*ft_read(char **line, int fd, int *bytes_read)
 	return (free(buff), *line);
 }
 
-int get_next_line(int fd, char **fin)
+int	get_next_line(int fd, char **fin)
 {
 	static char	*line;
 	char		*res;
@@ -117,10 +117,7 @@ int get_next_line(int fd, char **fin)
 	if (bytes_read == -1)
 		return (ft_free(bytes_read, &line), -1);
 	if (!line)
-	{
-		*fin = NULL;
-		return (1);
-	}
+		return (*fin = NULL, 1);
 	res = make_res(&line);
 	if (!res)
 		return (ft_free(bytes_read, &line), -1);
@@ -131,13 +128,8 @@ int get_next_line(int fd, char **fin)
 		line = NULL;
 	}
 	if (res && res[0] == '\0')
-	{
-		free(res);
-		*fin = NULL;
-		return (1);
-	}
-	*fin = res;
-	return (0);
+		return (free(res), *fin = NULL, 1);
+	return (*fin = res, 0);
 }
 /* 
 int	main()

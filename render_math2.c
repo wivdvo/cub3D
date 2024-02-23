@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render_math2.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 14:15:21 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/23 14:15:26 by fseles           ###   ########.fr       */
+/*   Updated: 2024/02/23 15:02:56 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	calc_top_and_bottom(t_cube *cube)
 	cube->draw_end = cube->lh / 2 + (double)HEIGHT / 2;
 	if (cube->draw_end >= HEIGHT)
 	{
-		cube->draw_end = HEIGHT - 1;
+		cube->draw_end = HEIGHT;
 	}
 }
 
