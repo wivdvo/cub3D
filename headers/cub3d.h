@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willem <willem@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 16:04:47 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/14 16:29:00 by willem           ###   ########.fr       */
+/*   Updated: 2024/02/23 13:01:39 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # define EAST 2
 # define SOUTH 3
 # define WEST 4
+# define N 1.5708
 # include <fcntl.h>
 # include <math.h>
 # include <mlx.h>

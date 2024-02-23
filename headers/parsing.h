@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 17:53:14 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/23 12:49:37 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/02/23 13:03:42 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ typedef struct s_cube
 	int		hit; //flag if wall was hit
 	int		side; //1 = NS wall ;; 2 = EW wall
 	double	big_nb;
-	int		line_height;
+	int		lh;
 	int		draw_start;
 	int		draw_end;
 	int		w_pressed;
