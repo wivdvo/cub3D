@@ -1,4 +1,5 @@
 
+
 int need_check(char c)
 {
 	const int need_check = {0, N S E W}
