@@ -18,6 +18,7 @@ SRCS =	main.c \
 		render_key_press.c \
 		render_key_press2.c \
 		render_math.c \
+		render_math2.c \
 		render.c \
 		spawn_utils.c \
 		spawn.c
