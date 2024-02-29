@@ -15,12 +15,12 @@
 
 typedef struct s_junk
 {
-	int we;
-	int so;
-	int ea;
-	int no;
-	int f;
-	int c;
+	int	we;
+	int	so;
+	int	ea;
+	int	no;
+	int	f;
+	int	c;
 }	t_junk;
 
 typedef struct s_data

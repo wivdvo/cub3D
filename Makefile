@@ -10,6 +10,7 @@ SRCS =	main.c \
 		get_textures_utils.c \
 		get_textures.c \
 		junk_checker.c \
+		junk_init.c \
 		get_colors.c \
 		get_colors_utils.c \
 		make_file_array.c \

@@ -48,6 +48,7 @@ void	check_d_pressed(t_cube *cube);
 void	check_s_pressed(t_cube *cube);
 void	check_w_pressed(t_cube *cube);
 void	get_spawn_position(t_cube *cube);
+void	junk_init(t_junk *junk);
 int		junk_checker(char **full_file, int map_beggin);
 void	load_imgs(t_cube *cube);
 void	render(t_cube *cube);
