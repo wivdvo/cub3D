@@ -92,7 +92,6 @@ int junk_checker(char **full_file, int map_beggin)
 {
 	int i;
 	t_junk junk;
-	printf("map beggin at %d\n", map_beggin);
 
 	junk_init(&junk);
 	i = 0;
