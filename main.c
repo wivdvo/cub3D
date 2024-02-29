@@ -44,7 +44,7 @@ int	main(int argc, char **argv)
 	}
 	init_pars_struct(&cube);
 	parsing(&cube, argv[1]);
-	if(junk_checker(cube.file, cube.map_begin) == 1)
+	if (junk_checker(cube.file, cube.map_begin) == 1)
 	{
 		put_error("There is junk or duplicate keyword in file");
 		pars_exit(&cube, NULL);
