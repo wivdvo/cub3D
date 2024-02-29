@@ -110,7 +110,8 @@ int	find(t_cube *cube, char *dir)
 	reset_start_end(cube);
 	while (cube->file[i] && i < cube->map_begin)
 	{
-		if (cube->file[i][0] == dir[0] && cube->file[i][1] == dir[1] && cube->file[i][2] == dir[2])
+		if (cube->file[i][0] == dir[0] && cube->file[i][1] == dir[1]
+			&& cube->file[i][2] == dir[2])
 		{
 			found = 1;
 			break ;
