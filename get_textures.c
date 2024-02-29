@@ -20,22 +20,22 @@ int	get_textures(t_cube *cube)
 {
 	int	ret;
 
-	ret = find(cube, "NO");
+	ret = find(cube, "NO ");
 	if (ret == -1)
 		return (-1);
 	if (ret == 0)
 		cube->no_flag = 1;
-	ret = find(cube, "EA");
+	ret = find(cube, "EA ");
 	if (ret == -1)
 		return (-1);
 	if (ret == 0)
 		cube->ea_flag = 1;
-	ret = find(cube, "SO");
+	ret = find(cube, "SO ");
 	if (ret == -1)
 		return (-1);
 	if (ret == 0)
 		cube->so_flag = 1;
-	ret = find(cube, "WE");
+	ret = find(cube, "WE ");
 	if (ret == -1)
 		return (-1);
 	if (ret == 0)
@@ -110,7 +110,7 @@ int	find(t_cube *cube, char *dir)
 	reset_start_end(cube);
 	while (cube->file[i] && i < cube->map_begin)
 	{
-		if (cube->file[i][0] == dir[0] && cube->file[i][1] == dir[1])
+		if (cube->file[i][0] == dir[0] && cube->file[i][1] == dir[1] && cube->file[i][2] == dir[2])
 		{
 			found = 1;
 			break ;

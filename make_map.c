@@ -75,9 +75,9 @@ void	check_that_nothing_after_end(t_cube *cube)
 	while (cube->file[i])
 	{
 		j = 0;
-		while (cube->file[i][j] && (cube->file[i][j] == ' '
-			|| cube->file[i][j] == '\n'))
-			j++;
+		// while (cube->file[i][j] && (cube->file[i][j] == ' '
+		// 	|| cube->file[i][j] == '\n'))
+		// 	j++;
 		if (cube->file[i][j] != 0)
 			pars_exit(cube, "there is something after map");
 		i++;
