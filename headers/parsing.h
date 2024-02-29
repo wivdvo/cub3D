@@ -13,6 +13,16 @@
 #ifndef PARSING_H
 # define PARSING_H
 
+typedef struct s_junk
+{
+	int we;
+	int so;
+	int ea;
+	int no;
+	int f;
+	int c;
+}	t_junk;
+
 typedef struct s_data
 {
 	void	*img;

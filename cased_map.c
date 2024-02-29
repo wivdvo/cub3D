@@ -221,7 +221,7 @@ int	is_map_cased(t_cube *cube)
 		{
 			value = all_direction_checker(map[row][column], row, column, map);
 			if (value != 1)
-				return (put_error("Map is not closed\n"), 0);
+				return (0);
 			column++;
 		}
 		row++;
