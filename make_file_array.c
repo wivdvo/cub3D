@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 16:13:40 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/04 16:47:57 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,14 +47,23 @@ int	realloc_file_array(t_cube *cube, char **line, int y)
 	return (0);
 }
 
+void	check_char_count(char *line, t_cube *cube, size_t *char_count)
+{
+	*char_count += ft_strlen1(line);
+	if (*char_count > 100000)
+		pars_exit(cube, "file containes more than 100k chars!");
+}
+
 int	read_file_array(t_cube *cube, int fd)
 {
 	int		y;
 	char	*line;
 	int		ret;
+	size_t	char_count;
 
 	y = 0;
 	line = NULL;
+	char_count = 0;
 	cube->file = (char **)malloc(sizeof(char *) * 2);
 	if (!cube->file)
 		pars_exit(cube, "malloc failed");
@@ -68,8 +77,8 @@ int	read_file_array(t_cube *cube, int fd)
 			pars_exit(cube, "gnl failed");
 		if (realloc_file_array(cube, &line, y) == -1)
 			return (-1);
+		check_char_count(line, cube, &char_count);
 		y++;
 	}
-	free(line);
-	return (0);
+	return (free(line), 0);
 }
