@@ -31,11 +31,11 @@ SRCS =	main.c \
 OBJS = $(SRCS:.c=.o)
 
 %.o: %.c $(HEADERS)
-	$(CC) -g $(COMPILER_FLAGS) -c $< -o $@
+	$(CC) -g $(CFLAGS) -c $< -o $@
 
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-#CFLAGS = -g
+
 LIBFLAGS =	-lmlx -lXext -lX11 -lm
 
 all: $(NAME)
