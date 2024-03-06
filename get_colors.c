@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:13:49 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/08 15:00:39 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/06 12:19:58 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,18 @@ int	extract_color(t_cube *cube, char *line, int flag, char floor_ceiling)
 	return (0);
 }
 
+void	check_after_color(t_cube *cube, int i, char *line)
+{
+	if (line[i] != ',' && line[i] != '\n')
+		pars_exit(cube, "not 3 color values or garbage");
+}
+
+void	check_if_not_digit(t_cube *cube, int i, char *line)
+{
+	if (!ft_isdigit(line[i]))
+		pars_exit(cube, "invalid color value");
+}
+
 //flag 1 = color to extract is red
 //flag 2 = color is green
 //falg 4 = color is blue
@@ -98,28 +110,28 @@ void	set_start_end_color(t_cube *cube, char *line, char floor_ceiling)
 	int	i;
 	int	flag;
 
-	i = 0;
+	i = 1;
 	flag = 1;
 	reset_start_end(cube);
-	while (line[i])
+	while (line[i] && (line[i] == ' ' || ft_isdigit(line[i])))
 	{
 		if (ft_isdigit(line[i]))
 		{
 			cube->info_start = i;
 			while (line[i] && line[i] != ','
-				&& line[i] != ' ' && line[i] != '-' && line[i] != '\n')
+				&& line[i] != ' ' && line[i] != '\n')
 			{
-				if (!ft_isdigit(line[i]))
-					pars_exit(cube, "invalid color value");
+				check_if_not_digit(cube, i, line);
 				i++;
 			}
 			cube->info_end = i;
+			check_after_color(cube, i, line);
 			extract_color(cube, line, flag++, floor_ceiling);
 		}
 		i++;
 	}
-	if (flag != 4)
-		pars_exit(cube, "not 3 color values");
+	if (flag != 4 || (line[i] != 0))
+		pars_exit(cube, "not 3 color values or garbage");
 }
 
 int	find_ceiling(t_cube *cube)

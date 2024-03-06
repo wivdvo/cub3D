@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 14:42:09 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/23 14:42:32 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/06 11:44:10 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	main(int argc, char **argv)
 	}
 	if (check_file_type(argv[1]) != 1)
 	{
-		put_error("Invalid file name/type");
+		put_error("Invalid file name/type. Has to be *.cub");
 		return (1);
 	}
 	init_pars_struct(&cube);
