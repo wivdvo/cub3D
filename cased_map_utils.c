@@ -81,7 +81,7 @@ int	down_check(char dot, int row, int column, char **map)
 	wall = 0;
 	while (map_row < last_row && wall == 0)
 	{
-		if (ft_strlen1(map[map_row]) - 1 <= (unsigned long) column)
+		if (ft_strlen1(map[map_row]) <= (unsigned long) column)
 			return (0);
 		if (is_end_map_char(map[map_row][map_column]) == 1)
 			return (0);
