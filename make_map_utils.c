@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   make_map_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 12:59:46 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/23 12:59:52 by fseles           ###   ########.fr       */
+/*   Updated: 2024/03/07 12:27:06 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,13 +57,17 @@ void	check_invalid_char(t_cube *cube)
 			if (cube->map[y][x] == 'N' || cube->map[y][x] == 'E'
 					|| cube->map[y][x] == 'S' || cube->map[y][x] == 'W')
 			{
-				if (flag == 0)
-					flag = 1;
-				else
-					pars_exit(cube, "multible player");
+				// if (flag == 0)
+				// 	flag = 1;
+				// else
+				// 	pars_exit(cube, "multible player");
+				flag++;
+
 			}
 			x++;
 		}
 		y++;
 	}
+	if (flag != 1)
+		pars_exit(cube, "wrong amount of players");
 }
