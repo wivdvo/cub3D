@@ -6,11 +6,17 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 14:55:04 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/23 13:43:39 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/07 12:38:37 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "headers/cub3d.h"
+
+void	render_msg(char *str, t_cube *cube)
+{
+	put_error(str);
+	render_exit(cube);
+}
 
 void	init_mlx(t_cube *cube)
 {
@@ -27,11 +33,11 @@ void	init_mlx(t_cube *cube)
 	}
 	cube->img.img = mlx_new_image(cube->mlx_ptr, WIDTH, HEIGHT);
 	if (!cube->img.img)
-		render_exit(cube);
+		render_msg("mlx failed", cube);
 	cube->img.addr = mlx_get_data_addr(cube->img.img, &cube->img.bits_per_pixel,
 			&cube->img.line_length, &cube->img.endian);
 	if (!cube->img.img)
-		render_exit(cube);
+		render_msg("mlx failed", cube);
 	my_mlx_pixel_put(&cube->img, 5, 5, 0x00FF0000);
 	mlx_put_image_to_window(cube->mlx_ptr, cube->win_ptr, cube->img.img, 0, 0);
 }
