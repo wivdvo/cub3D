@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/03/06 11:50:46 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/08 14:14:53 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ int	set_start_end(t_cube *cube, char *line)
 	int	i;
 
 	i = 2;
-	
 	while (line[i] && (line[i] == ' ' || line[i] == '.'))
 	{
 		if (line[i] == '.' && line[i + 1] == '/')
@@ -130,12 +129,16 @@ int	find(t_cube *cube, char *dir)
 int	check_flags(t_cube *cube)
 {
 	if (cube->no_flag != 1)
-		return (pars_exit(cube, "north texture not sperated, missing or after map"), 1);
+		return (pars_exit(cube,
+				"north texture not sperated, missing or after map"), 1);
 	if (cube->so_flag != 1)
-		return (pars_exit(cube, "south texture not sperated, missing or after map"), 1);
+		return (pars_exit(cube,
+				"south texture not sperated, missing or after map"), 1);
 	if (cube->ea_flag != 1)
-		return (pars_exit(cube, "east texture not sperated, missing or after map"), 1);
+		return (pars_exit(cube,
+				"east texture not sperated, missing or after map"), 1);
 	if (cube->we_flag != 1)
-		return (pars_exit(cube, "west texture not sperated, missing or after map"), 1);
+		return (pars_exit(cube,
+				"west texture not sperated, missing or after map"), 1);
 	return (0);
 }

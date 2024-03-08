@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 17:53:14 by fseles            #+#    #+#             */
-/*   Updated: 2024/03/07 12:35:24 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/08 14:15:49 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,5 +141,6 @@ int		find_map_end(t_cube *cube);
 int		get_colors(t_cube *cube);
 void	check_that_nothing_after_end(t_cube *cube);
 void	check_invalid_char(t_cube *cube);
+void	check_after_color(t_cube *cube, int i, char *line);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:13:49 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/03/06 12:19:58 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/08 14:15:34 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,12 +88,6 @@ int	extract_color(t_cube *cube, char *line, int flag, char floor_ceiling)
 	if (floor_ceiling == 'C')
 		put_color_ceiling(cube, value, flag);
 	return (0);
-}
-
-void	check_after_color(t_cube *cube, int i, char *line)
-{
-	if (line[i] != ',' && line[i] != '\n')
-		pars_exit(cube, "not 3 color values or garbage");
 }
 
 void	check_if_not_digit(t_cube *cube, int i, char *line)
