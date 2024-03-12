@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render_key_press.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 13:55:54 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/23 13:55:58 by fseles           ###   ########.fr       */
+/*   Updated: 2024/03/12 15:25:48 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,11 @@ void	check_w_pressed(t_cube *cube)
 {
 	if (cube->w_pressed)
 	{
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))]
-				[(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))] && cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))]
+				[(int)(cube->pos_y)] == '0')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * (1.1))] != '1')
+		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
+				[(int)(cube->pos_y + cube->dir_y * (1.1))] == '0')
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
@@ -75,11 +75,11 @@ void	check_d_pressed(t_cube *cube)
 		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-N) - cube->plane_y * sin(-N);
 		cube->plane_y = old_plane_x * sin(-N) + cube->plane_y * cos(-N);
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
-				[(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)] && cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+				[(int)(cube->pos_y)] == '0')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
+		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
+				[(int)(cube->pos_y + cube->dir_y * 1.1)] == '0')
 			cube->pos_y += cube->dir_y * MS;
 		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(N) - cube->dir_y * sin(N);
@@ -95,11 +95,11 @@ void	check_s_pressed(t_cube *cube)
 {
 	if (cube->s_pressed)
 	{
-		if (cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)]
-				[(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)] && cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)]
+				[(int)(cube->pos_y)] == '0')
 			cube->pos_x -= cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y - cube->dir_y * 1.1)] != '1')
+		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
+				[(int)(cube->pos_y - cube->dir_y * 1.1)] == '0')
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}

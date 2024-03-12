@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 14:04:06 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/23 14:29:14 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/12 15:25:52 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void	check_a_pressed(t_cube *cube)
 		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(N) - cube->plane_y * sin(N);
 		cube->plane_y = old_plane_x * sin(N) + cube->plane_y * cos(N);
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
-				[(int)(cube->pos_y)] != '1')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)] && cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+				[(int)(cube->pos_y)] == '0')
 			cube->pos_x += cube->dir_x * MS;
-		if (cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
+		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
+				[(int)(cube->pos_y + cube->dir_y * 1.1)] == '0')
 			cube->pos_y += cube->dir_y * MS;
 		old_dir_x = cube->dir_x;
 		cube->dir_x = cube->dir_x * cos(-N) - cube->dir_y * sin(-N);
