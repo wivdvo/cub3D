@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 17:53:14 by fseles            #+#    #+#             */
-/*   Updated: 2024/03/08 14:15:49 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/14 16:08:14 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,6 +106,7 @@ typedef struct s_cube
 	int		tex_x;
 	double	step;
 	int		fd;
+	int		file_line_count;
 }	t_cube;
 
 int		all_direction_checker(char dot, int xd, int yd, char **map);

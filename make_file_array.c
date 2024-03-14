@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 15:02:30 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/03/04 16:47:57 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/14 16:09:44 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,10 @@ void	check_char_count(char *line, t_cube *cube, size_t *char_count)
 
 int	read_file_array(t_cube *cube, int fd)
 {
-	int		y;
 	char	*line;
 	int		ret;
 	size_t	char_count;
 
-	y = 0;
 	line = NULL;
 	char_count = 0;
 	cube->file = (char **)malloc(sizeof(char *) * 2);
@@ -75,10 +73,10 @@ int	read_file_array(t_cube *cube, int fd)
 			break ;
 		if (ret == -1)
 			pars_exit(cube, "gnl failed");
-		if (realloc_file_array(cube, &line, y) == -1)
+		if (realloc_file_array(cube, &line, cube->file_line_count) == -1)
 			return (-1);
 		check_char_count(line, cube, &char_count);
-		y++;
+		cube->file_line_count++;
 	}
 	return (free(line), 0);
 }

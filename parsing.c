@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:30:02 by wvan-der          #+#    #+#             */
-/*   Updated: 2024/02/22 15:20:52 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/14 16:12:39 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ static void	pointers_and_keys_init(t_cube *cube)
 	cube->left_pressed = 0;
 	cube->right_pressed = 0;
 	cube->esc_pressed = 0;
+	cube->file_line_count = 0;
 }
 
 void	init_pars_struct(t_cube *cube)
@@ -68,9 +69,7 @@ int	find_map_begin(t_cube *cube)
 	{
 		j = 0;
 		while (cube->file[i][j] && cube->file[i][j] == ' ')
-		{
 			j++;
-		}
 		if (cube->file[i][j] == '1' || cube->file[i][j] == '0')
 			break ;
 		if (cube->file[i][j] == 'N' && cube->file[i][j + 1] != 'O')
@@ -84,6 +83,8 @@ int	find_map_begin(t_cube *cube)
 		i++;
 	}
 	cube->map_begin = i;
+	if (i == cube->file_line_count)
+		pars_exit(cube, "No map in File");
 	return (0);
 }
 
