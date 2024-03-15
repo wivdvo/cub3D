@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   spawn_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fseles <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 13:27:20 by fseles            #+#    #+#             */
-/*   Updated: 2024/02/23 13:27:45 by fseles           ###   ########.fr       */
+/*   Updated: 2024/03/15 17:35:39 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ void	get_spawn_position(t_cube *cube)
 			if (is_player(map[i][j]) == 1)
 			{
 				set_spawn_direction(map[i][j], cube);
+				cube->map[i][j] = '0';
 				cube->pos_x = i + 0.5;
 				cube->pos_y = j + 0.5;
 				return ;

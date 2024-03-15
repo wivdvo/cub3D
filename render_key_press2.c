@@ -6,7 +6,7 @@
 /*   By: wvan-der <wvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 14:04:06 by fseles            #+#    #+#             */
-/*   Updated: 2024/03/12 15:25:52 by wvan-der         ###   ########.fr       */
+/*   Updated: 2024/03/15 17:34:54 by wvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ void	check_a_pressed(t_cube *cube)
 		cube->plane_y = old_plane_x * sin(N) + cube->plane_y * cos(N);
 		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
 			&& cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
-			[(int)(cube->pos_y)] != '1')
+			[(int)(cube->pos_y)] == '0')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
+				[(int)(cube->pos_y + cube->dir_y * 1.1)] == '0')
 			cube->pos_y += cube->dir_y * MS;
 		a_utils(cube, old_dir_x, old_plane_x);
 		raycaster(cube);
