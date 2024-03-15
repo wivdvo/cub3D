@@ -52,11 +52,12 @@ void	check_w_pressed(t_cube *cube)
 {
 	if (cube->w_pressed)
 	{
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))] && cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))]
-				[(int)(cube->pos_y)] == '0')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))]
+			&& cube->map[(int)(cube->pos_x + cube->dir_x * (1.1))]
+			[(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * (1.1))] == '0')
+				[(int)(cube->pos_y + cube->dir_y * (1.1))] != '1')
 			cube->pos_y += cube->dir_y * MS;
 		raycaster(cube);
 	}
@@ -75,18 +76,14 @@ void	check_d_pressed(t_cube *cube)
 		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(-N) - cube->plane_y * sin(-N);
 		cube->plane_y = old_plane_x * sin(-N) + cube->plane_y * cos(-N);
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)] && cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
-				[(int)(cube->pos_y)] == '0')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+			&& cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+			[(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * 1.1)] == '0')
+				[(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
-		old_dir_x = cube->dir_x;
-		cube->dir_x = cube->dir_x * cos(N) - cube->dir_y * sin(N);
-		cube->dir_y = old_dir_x * sin(N) + cube->dir_y * cos(N);
-		old_plane_x = cube->plane_x;
-		cube->plane_x = cube->plane_x * cos(N) - cube->plane_y * sin(N);
-		cube->plane_y = old_plane_x * sin(N) + cube->plane_y * cos(N);
+		utils_d(cube, old_dir_x, old_plane_x);
 		raycaster(cube);
 	}
 }
@@ -95,11 +92,12 @@ void	check_s_pressed(t_cube *cube)
 {
 	if (cube->s_pressed)
 	{
-		if (cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)] && cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)]
-				[(int)(cube->pos_y)] == '0')
+		if (cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)]
+			&& cube->map[(int)(cube->pos_x - cube->dir_x * 1.1)]
+			[(int)(cube->pos_y)] != '1')
 			cube->pos_x -= cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y - cube->dir_y * 1.1)] == '0')
+				[(int)(cube->pos_y - cube->dir_y * 1.1)] != '1')
 			cube->pos_y -= cube->dir_y * MS;
 		raycaster(cube);
 	}

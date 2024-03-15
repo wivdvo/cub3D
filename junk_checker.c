@@ -32,13 +32,13 @@ int	after_space_checker(char *line)
 //return 0 if not correct
 int	flag_setter(char *line, t_junk *junk)
 {
-	if (strncmp(line, "WE", 2) == 0)
+	if (ft_strncmp(line, "WE", 2) == 0)
 		return (junk->we++, 1);
-	else if (strncmp(line, "SO", 2) == 0)
+	else if (ft_strncmp(line, "SO", 2) == 0)
 		return (junk->so++, 1);
-	else if (strncmp(line, "NO", 2) == 0)
+	else if (ft_strncmp(line, "NO", 2) == 0)
 		return (junk->no++, 1);
-	else if (strncmp(line, "EA", 2) == 0)
+	else if (ft_strncmp(line, "EA", 2) == 0)
 		return (junk->ea++, 1);
 	else
 		return (0);

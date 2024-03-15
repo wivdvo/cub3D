@@ -12,6 +12,16 @@
 
 #include "headers/cub3d.h"
 
+void	a_utils(t_cube *cube, double old_dir_x, double old_plane_x)
+{
+	old_dir_x = cube->dir_x;
+	cube->dir_x = cube->dir_x * cos(-N) - cube->dir_y * sin(-N);
+	cube->dir_y = old_dir_x * sin(-N) + cube->dir_y * cos(-N);
+	old_plane_x = cube->plane_x;
+	cube->plane_x = cube->plane_x * cos(-N) - cube->plane_y * sin(-N);
+	cube->plane_y = old_plane_x * sin(-N) + cube->plane_y * cos(-N);
+}
+
 void	check_a_pressed(t_cube *cube)
 {
 	double	old_dir_x;
@@ -25,18 +35,14 @@ void	check_a_pressed(t_cube *cube)
 		old_plane_x = cube->plane_x;
 		cube->plane_x = cube->plane_x * cos(N) - cube->plane_y * sin(N);
 		cube->plane_y = old_plane_x * sin(N) + cube->plane_y * cos(N);
-		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)] && cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
-				[(int)(cube->pos_y)] == '0')
+		if (cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+			&& cube->map[(int)(cube->pos_x + cube->dir_x * 1.1)]
+			[(int)(cube->pos_y)] != '1')
 			cube->pos_x += cube->dir_x * MS;
 		if (cube->map[(int)(cube->pos_x)] && cube->map[(int)(cube->pos_x)]
-				[(int)(cube->pos_y + cube->dir_y * 1.1)] == '0')
+				[(int)(cube->pos_y + cube->dir_y * 1.1)] != '1')
 			cube->pos_y += cube->dir_y * MS;
-		old_dir_x = cube->dir_x;
-		cube->dir_x = cube->dir_x * cos(-N) - cube->dir_y * sin(-N);
-		cube->dir_y = old_dir_x * sin(-N) + cube->dir_y * cos(-N);
-		old_plane_x = cube->plane_x;
-		cube->plane_x = cube->plane_x * cos(-N) - cube->plane_y * sin(-N);
-		cube->plane_y = old_plane_x * sin(-N) + cube->plane_y * cos(-N);
+		a_utils(cube, old_dir_x, old_plane_x);
 		raycaster(cube);
 	}
 }

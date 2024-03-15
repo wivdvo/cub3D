@@ -20,6 +20,7 @@ SRCS =	main.c \
 		my_mlx_pixel_put.c \
 		paint_ceiling_floor.c \
 		render_init_img.c \
+		render_key_d.c \
 		render_key_press.c \
 		render_key_press2.c \
 		render_math.c \
